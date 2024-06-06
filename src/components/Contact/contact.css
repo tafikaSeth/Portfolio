@@ -93,10 +93,21 @@
     outline-color: #14FF00;
     background: #3d3a3a;
 }
-.content-contact-cardTwo-message button{
+.btnActive{
     width: 200px;
     height: 50px;
     background: #14FF00;
+    /* background: #373837; */
+    color: #fff;
+    font-family: 'Lexend',sans-serif;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnDisable{
+    width: 200px;
+    height: 50px;
+    background: #373837;
     color: #fff;
     font-family: 'Lexend',sans-serif;
     border: 1px solid #212121;

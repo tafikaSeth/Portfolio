@@ -34,7 +34,7 @@ const Home = () => {
     
     return(
         <div id="home" className="container-home">
-            <header><Navbar/></header>
+            {/* <header><Navbar/></header> */}
             <main className="content-home">
                 <div className="content-home-name">
                     <h1>Hello,<br></br>I'm <span className="word-color">{displayText}</span></h1>

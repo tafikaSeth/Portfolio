@@ -5,6 +5,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
     const [isRecaptchaChecked, setRecaptchaChecked] = useState(false);
+    const [nameClass,setNameClass] = useState("btnRecap")
     const captcha = useRef(null)
     const inputValue = useRef(null)
   
@@ -13,8 +14,9 @@ const Contact = () => {
       if(captcha.current.getValue()){
         setRecaptchaChecked(!!value);
       }
+
     }
-    
+
     const[formData, setFormData] = useState({
         userName:'',
         userEmail:'',
@@ -81,7 +83,7 @@ const Contact = () => {
                                     />
                                 <label>Your Message</label>
                                 <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message"/>
-                                <button disabled={!isRecaptchaChecked} type="submit">Send message</button>
+                                <button className={isRecaptchaChecked?"btnActive":"btnDisable"} disabled={!isRecaptchaChecked} type="submit">Send message</button>
                             </div>
                         </div>
                     </div>
