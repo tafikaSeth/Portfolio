@@ -1,9 +1,7 @@
 import React from "react";
 import "./project.css"
 import CardWeb from "./CardWeb";
-import CardLangage from "../Skills/CardLangage"
-import CardDb from "../Skills/CardDb"
-import CardFramework from "../Skills/CardFramework"
+import CardLangage from "../Skills/CardLangage";
 import Tooltip from "./Tooltip";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -15,7 +13,7 @@ const Project = () => {
     const paragraphMikrea = "Integration of the website named MikRea project to broaden my web development skills"
     const outilsMikrea = "Outils: HTML,CSS,Javascript,NextJs."
     const paragraphVideo = "Creation of an application to make local video calls project personnel"
-    const outilsVideo = "Outils: HTML,CSS,TypeScript,AgoraRTC,NextJs."
+    const outilsVideo = "Outils: HTML,CSS,JavaScript,AgoraRTC,ReactJs."
     const paragraphKali = "Creation of a web design with prototypes for booking nutrition coaching"
     const outilsKali = "Outil: Figma"
     const urlKali = "https://www.figma.com/proto/vCnZw2XyJcvy9a9fShqLdS/Plateforme-de-r%C3%A9servation-de-service-de-coaching-en-nutrition?node-id=21-16&starting-point-node-id=21%3A16"

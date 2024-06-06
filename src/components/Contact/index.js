@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import "./contact.css"
 import emailjs from "emailjs-com"
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+    const [isRecaptchaChecked, setRecaptchaChecked] = useState(false);
+    const captcha = useRef(null)
+    const inputValue = useRef(null)
+  
+    const handleRecap=(value)=>{
+      console.log(captcha.current.getValue());
+      if(captcha.current.getValue()){
+        setRecaptchaChecked(!!value);
+      }
+    }
+    
     const[formData, setFormData] = useState({
         userName:'',
         userEmail:'',
@@ -62,9 +74,14 @@ const Contact = () => {
                                 <h4>Send me a message</h4>
                                 <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*" required/>
                                 <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*" required/>
+                                    <ReCAPTCHA
+                                    ref={captcha}
+                                    sitekey='6LcOs5wpAAAAAGyqC807hfWT1VBLa-qaE1HaO0PF'
+                                    onChange={handleRecap}
+                                    />
                                 <label>Your Message</label>
-                                <input type="text" name="message" value={formData.message} onChange={handleChange} id="input-message"/>
-                                <button type="submit">Send message</button>
+                                <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message"/>
+                                <button disabled={!isRecaptchaChecked} type="submit">Send message</button>
                             </div>
                         </div>
                     </div>
