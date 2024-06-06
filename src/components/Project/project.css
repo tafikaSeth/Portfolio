@@ -1,0 +1,132 @@
+.container-project{
+    width: 100%;
+    height: 100vh;
+    background: #212121;
+    display: flex;
+    justify-content: center;
+}
+.content-project{
+    width: 90%;
+    height: 80vh;
+    /* background: white; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-project h1{
+    font-family: 'Lexend',sans-serif;
+    color: #fff;
+}
+.content-project hr{
+    width: 80px;
+    border: 2px solid #14FF00;
+    margin-left: 0px;
+    transform: translateY(-7px);
+}
+.content-project-myservices{
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid #fff; */
+    /* background: #121212; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.content-line-round{
+    width: 5vw;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.round-first{
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.round-second{
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.round-third{
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.round-fourth{
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.round-after{
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: #14FF00;
+    cursor: pointer;
+}
+.line-first{
+    border-left: 2px solid #fff;
+    height: 50px;
+}
+.content-projects-cards{
+    width: 80vw;
+    height: 100%;
+}
+.content-projects-for-card-web{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    /* border: 1px solid #14FF00; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-projects-for-card-mobile{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: none;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+}
+.content-projects-for-card-design{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: none;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+}
+.content-projects-for-card-ai{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: none;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+}

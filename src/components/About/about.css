@@ -1,0 +1,115 @@
+.container-about{
+    width: 100%;
+    height: 100vh;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+}
+.content-about{
+    width: 90%;
+    height: 80vh;
+    /* background: white; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content-about-image{
+    width: 50%;
+    height: 90vh;
+    transform: translateY(-20px);
+    background: #14FF00;
+    background-image: url('/public/assets/aboute.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content-about-texte{
+    width: 47%;
+    height:70vh;
+    /* background: green; */
+}
+.content-about-texte h1{
+    font-family: 'Lexend',sans-serif;
+    color: #fff;
+}
+.content-about-texte hr{
+    width: 80px;
+    border: 2px solid #14FF00;
+    margin-left: 0px;
+    transform: translateY(-7px);
+}
+.content-about-texte p{
+  font-family: 'Lexend',sans-serif;
+  font-weight: 200;
+  color:rgb(102, 100, 100);
+}
+.content-about-btn{
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content-about-btn a{
+    text-decoration: none;
+}
+.button {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #1d7515;
+    background-color: #14FF00;
+    overflow: hidden;
+  }
+  
+  .button, .button-icon, .button-text {
+    transition: all 0.3s;
+  }
+  
+  .button .button-text {
+    font-family: 'Lexend',sans-serif;
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button-icon {
+    position: absolute;
+    transform: translateX(153px);
+    height: 100%;
+    width: 39px;
+    background-color: #1d7515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .button:hover {
+    background: #1d7515;
+  }
+  
+  .button:hover .button-text {
+    color: transparent;
+  }
+  
+  .button:hover .button-icon {
+    width: 148px;
+    transform: translateX(15px);
+  }
+  
+  .button:active .button-icon {
+    background-color: #146c54;
+  }
+  
+  .button:active {
+    border: 1px solid #1d7515;
+  }

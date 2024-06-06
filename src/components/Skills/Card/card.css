@@ -1,0 +1,78 @@
+.flip-box {
+    background-color: transparent;
+    width: 388px;
+    height: 30vh;
+    perspective: 1000px;
+    font-family: 'Lexend',sans-serif;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flipped{
+    transform: rotateY(180deg);
+  }
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #212121;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flip-box-front:hover{
+    font-family: 'Lexend',sans-serif;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .flip-box-front-content{
+    width: 90%;
+    height: 30vh;
+    /* background: violet; */
+  }
+  .flip-box-front-content img{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+  }
+  .flip-box-front-content h4{
+    font-family: 'Lexend',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .flip-box-front-content p{
+    font-family: 'Lexend',sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: -10px;
+    text-align: justify;
+    color: rgb(102, 100, 100);
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background: #212121;
+    color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+  }

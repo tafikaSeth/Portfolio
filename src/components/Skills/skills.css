@@ -1,0 +1,64 @@
+.container-skills{
+    width: 100%;
+    height: 100vh;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-skills{
+    width: 90%;
+    height: 80vh;
+    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 25px;
+}
+.content-skills-title{
+    width: 25%;
+    height: 20vh;
+    /* background: blue; */
+    margin-right: 270px;
+}
+.content-skills-title h1{
+    font-family: 'Lexend',sans-serif;
+    color: #fff;
+}
+.content-skills-title hr{
+    width: 80px;
+    border: 2px solid #14FF00;
+    margin-left: 0px;
+    transform: translateY(-7px);
+}
+.content-skills-myskills{
+    width: 100%;
+    height: 70vh;
+    /* background: white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+.content-skills-myskills-card{
+    width: 388px;
+    height: 30vh;
+    background: #212121;
+    display: flex;
+    flex-direction: column;
+}
+.content-skills-myskills-card .circle{
+    width: 40px;
+    height: 40px;
+    background: #14FF00;
+    border: 1px solid #212121;
+    border-radius: 50%;
+}
+.content-skills-myskills-card h4{
+    color: #fff;
+    font-family: 'Lexend',sans-serif;
+    transform: translateY(-15px);
+    margin:15px;
+}

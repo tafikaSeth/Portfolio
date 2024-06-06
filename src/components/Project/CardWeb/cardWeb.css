@@ -1,0 +1,57 @@
+.container-cardweb{
+  width: 350px;
+  height: 58vh;
+  background: #121212;
+  transition: 0.8s;
+}
+.content-cardweb{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-cardweb:hover{
+  font-family: 'Lexend',sans-serif;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.content-cardweb-image{
+  width: 100%;
+  height: 50%;
+  background-image: url('/public/assets//web.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-cardweb-texte{
+  width: 100%;
+  height: 50%;
+  /* background: violet; */
+
+}
+.content-cardweb-texte h4{
+  font-family: 'Lexend',sans-serif;
+  color: #fff;
+  text-align: center;
+  /* font-size: 15px; */
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.content-cardweb-texte p{
+  color: rgb(102, 100, 100);
+  font-family: 'Lexend',sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+.content-cardweb-texte button{
+  width: 150px;
+  height: 30px;
+  background: #14FF00;
+  color: #fff;
+  font-family: 'Lexend',sans-serif;
+  border: 1px solid #121212;
+  border-radius: 5px;
+  cursor: pointer;
+  /* float: right; */
+  float: right;
+}

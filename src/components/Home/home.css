@@ -1,0 +1,120 @@
+.container-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #212121;
+}
+.content-home{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+.content-home-name{
+  width: 600px;
+  height: 70vh;
+  background: transparent;
+}
+.content-home-name h1{
+  color: #fff;
+  font-family: 'Lexend',sans-serif;
+  font-size: 50px;
+  width: 500px;
+  height: 40vh;
+}
+.word-color{
+  font-size: 60px;
+  font-family: 'Lexend',sans-serif;
+  /* color: #14FF00; */
+  -webkit-text-stroke: 1px #14FF00;
+  -webkit-text-fill-color: #212121;
+}
+.content-home-name h2{
+  font-weight: 400;
+  font-size: 32px;
+  font-family: 'Lexend',sans-serif;
+  color: rgb(102, 100, 100);
+  transform: translateY(-150px);
+  letter-spacing: 2px;
+}
+.btn-contact{
+  transform: translateY(-120px);
+}
+.btn-contact a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #14FF00;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.btn-contact a::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-contact a:hover::before {
+  transform: scaleY(0);
+}
+
+.btn-contact a::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+.btn-contact a:hover::after {
+  transform: scaleX(0);
+}
+
+.btn-contact a span {
+  position: relative;
+  z-index: 3;
+  font-size: 15px;
+  font-family: 'Lexend',sans-serif;
+}
+
+.btn-contact button {
+  background-color: none;
+  text-decoration: none;
+  background-color: #212121;
+  border: none;
+}
+.content-home-image{
+  width: 45%;
+  height: 100vh;
+  background-image: url('../../../public/assets/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translateY(-130px);
+}
+  
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
