@@ -11,13 +11,16 @@ import { useEffect } from "react";
 const Project = () => {
     const paragraphPortfolio = "Creation of my portfolio to show you what I'm capable of in the world of web development"
     const outilsPortfolio = "Outils: HTML,CSS,Javascript,ReactJs."
+    const urlPortfolio = "https://github.com/tafikaSeth/Portfolio.git"
     const paragraphMikrea = "Integration of the website named MikRea project to broaden my web development skills"
     const outilsMikrea = "Outils: HTML,CSS,Javascript,NextJs."
     const paragraphVideo = "Creation of an application to make local video calls project personnel"
     const outilsVideo = "Outils: HTML,CSS,TypeScript,AgoraRTC,NextJs."
     const paragraphKali = "Creation of a web design with prototypes for booking nutrition coaching"
     const outilsKali = "Outil: Figma"
+    const urlKali = "https://www.figma.com/proto/vCnZw2XyJcvy9a9fShqLdS/Plateforme-de-r%C3%A9servation-de-service-de-coaching-en-nutrition?node-id=21-16&starting-point-node-id=21%3A16"
     const outilsChat = "Outils: Python,Ampalibe,API chatGPT"
+    const urlChat = "https://github.com/tafikaSeth/Paris_sportif.git"
     const paragraphChat = "Creation of a sports betting messenger chatbot and chatGPT-turbo integration"
     const [isDisp,setIsDisp] = useState(true)
     const [roundSelected,setRoundSelected] = useState('round-first')
@@ -106,7 +109,7 @@ const Project = () => {
                     </div>
                     <div className="content-projects-cards">
                         <div className="content-projects-for-card-web" style={{display:displayCardWeb}}>
-                            <CardWeb backround='/assets/home.png' projectName='MY PORTFOLIO' urlButton='#portfolio' paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
+                            <CardWeb backround='/assets/home.png' projectName='MY PORTFOLIO' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
                             <CardWeb backround='/assets/mikrea.png' projectName='MIKREA' urlButton='#mikrea' paragraph={paragraphMikrea} outils={outilsMikrea}/>
                             <CardWeb backround='/assets/videoCall.jpg' projectName='VIDEO CALLING' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
                         </div>
@@ -115,10 +118,10 @@ const Project = () => {
                             <CardLangage/>
                         </div>
                         <div className="content-projects-for-card-design" style={{display:displayCardDesign}}>
-                            <CardWeb backround='/assets/webDesign.png' projectName='C-KALI' urlButton='#Ckali' paragraph={paragraphKali} outils={outilsKali}/>
+                            <CardWeb backround='/assets/webDesign.png' projectName='C-KALI' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>
                         </div>
                         <div className="content-projects-for-card-ai" style={{display:displayCardChatbot}}>
-                            <CardWeb backround='/assets/chat.png' projectName='CHATBOT MESSENGER' urlButton='#chatbot' paragraph={paragraphChat} outils={outilsChat}/>
+                            <CardWeb backround='/assets/chat.png' projectName='CHATBOT MESSENGER' urlButton={urlChat} paragraph={paragraphChat} outils={outilsChat}/>
                         </div>
                     </div>
                 </div>
