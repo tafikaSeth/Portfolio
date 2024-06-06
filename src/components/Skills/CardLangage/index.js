@@ -4,6 +4,7 @@ import CardSkill from '../cardSkill'
 import "../Card/card.css"
 
 const CardLangage = ({title,image}) => {
+    const contexte = "Programming languages are the core tools for writing software. Each language has its strengths and ideal use cases, whether for web development, ... ."
     const[isFlipped, setIsFlipped] = useState(false)
     const[front, setFront] = useState('flip-box-front')
 
@@ -17,7 +18,7 @@ const CardLangage = ({title,image}) => {
                     <div className='flip-box-front-content'>
                         <img src={image} alt={title}/>
                         <h4>{title}</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>{contexte}</p>
                     </div>
                 </div>
                 <div className="flip-box-back">

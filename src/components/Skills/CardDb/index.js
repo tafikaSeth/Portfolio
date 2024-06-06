@@ -4,6 +4,7 @@ import CardSkill from '../cardSkill'
 import "../Card/card.css"
 
 const CardDb = ({title,image}) => {
+    const contexte = "Databases are systems for storing, retrieving, and managing data. They are crucial for handling the data-driven needs of applications."
     const[isFlipped, setIsFlipped] = useState(false)
     const[front, setFront] = useState('flip-box-front')
 
@@ -17,7 +18,7 @@ const CardDb = ({title,image}) => {
                     <div className='flip-box-front-content'>
                         <img src={image} alt={title}/>
                         <h4>{title}</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>{contexte}</p>
                     </div>
                 </div>
                 <div className="flip-box-back">
