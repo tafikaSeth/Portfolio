@@ -17,10 +17,11 @@
     "react-google-recaptcha-v3": "^1.10.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
+    "swiper": "^11.1.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --host localhost --port 3000",
+    "start": "react-scripts start --host localhost --port 3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

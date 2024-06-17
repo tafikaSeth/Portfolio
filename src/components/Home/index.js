@@ -1,7 +1,5 @@
 import React from "react"
 import { useState,useEffect } from "react"
-import { Link } from "react-router-dom"
-import Navbar from "../Navbar"
 import "./home.css"
 
 const Home = () => {
@@ -34,11 +32,10 @@ const Home = () => {
     
     return(
         <div id="home" className="container-home">
-            {/* <header><Navbar/></header> */}
-            <main className="content-home">
+            <div className="content-home">
                 <div className="content-home-name">
-                    <h1>Hello,<br></br>I'm <span className="word-color">{displayText}</span></h1>
-                    <h2>Web Developer</h2>
+                    <h1>Hello,<br/>I'm <span className="word-color">{displayText}</span> <br/><span className="developer">Web Developer</span></h1>
+                    {/* <h2>Web Developer</h2> */}
                     <div className="btn-contact">
                         <button onClick={(e)=>clickContact(e,'contact')}>
                             <a href="../About">
@@ -48,7 +45,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="content-home-image"></div>
-            </main>
+            </div>
         </div>
     )
 }

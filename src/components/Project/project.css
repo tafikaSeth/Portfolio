@@ -130,3 +130,11 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@media screen and (max-width: 375px) {
+    .container-project{
+      width: 375px;
+      height: 100vh;
+      background: blue;
+    }
+  }

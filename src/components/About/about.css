@@ -18,7 +18,7 @@
     width: 50%;
     height: 90vh;
     transform: translateY(-20px);
-    background: #14FF00;
+    /* background: #14FF00; */
     background-image: url('/public/assets/aboute.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,4 +112,59 @@
   
   .button:active {
     border: 1px solid #1d7515;
+  }
+
+  @media (max-width: 575.98px) {
+    .container-about{
+      width: 100%;
+    }
+    .content-about{
+      width: 100%;
+      height: 100%;
+      background: #121212;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .content-about-image{
+      width: 100%;
+      height: 300px;
+      /* background: white; */
+      transform: translateY(50px);
+      background-image: url('/public/assets/aboute.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    .content-about-texte{
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* gap: 25px; */
+    }
+    .content-about-texteOne hr{
+      margin-left: 10px;
+    }
+    .content-about-texte p,h1{
+      width: 95%;
+      font-family: 'Lexend',sans-serif;
+      text-align: justify;
+      margin-left: 10px;
+    }
+    .content-about-texte p{
+      font-size: 18px;
+    }
+    .content-about-btn{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      transform: translateY(10px);
+    }
+    
   }

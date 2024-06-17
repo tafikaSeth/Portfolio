@@ -68,3 +68,54 @@
   .navbar-links a:hover::after {
     width: 100%;
   }
+
+@media (max-width: 640px) {
+  .navbar{
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    background: #121212;
+    font-family: 'Lexend', sans-serif;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-logo{
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    /* margin-left: 10px; */
+  }
+  .navbar-links a{
+    display: none;
+    color: blue;
+  }
+  .navbar-mode img{
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 509px) {
+  .navbar{
+    width: 100%;
+  }
+}
+@media (min-width: 400px) and (max-width: 499px) {
+  .navbar{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 399px) {
+  .navbar{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .navbar{
+    width: 100%;
+  }
+}
