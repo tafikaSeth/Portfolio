@@ -12,9 +12,9 @@ const App = () => {
     <div className='App'>
       <Navbar/>
       <Home id="home"/>
-       {/* <About id="about"/> */}
-      {/* <Project id="project"/>
-      <Skills id="skill"/>
+       <About id="about"/>
+      <Project id="project"/>
+      {/* <Skills id="skill"/>
       <Contact id="contact"/> */}
     </div>
   );

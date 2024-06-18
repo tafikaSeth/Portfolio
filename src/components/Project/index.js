@@ -1,10 +1,9 @@
+import { useState,useEffect } from "react";
 import React from "react";
 import "./project.css"
 import CardWeb from "./CardWeb";
 import CardLangage from "../Skills/CardLangage";
 import Tooltip from "./Tooltip";
-import { useState } from "react";
-import { useEffect } from "react";
 
 const Project = () => {
     const paragraphPortfolio = "Creation of my portfolio to show you what I'm capable of in the world of web development"
@@ -20,6 +19,7 @@ const Project = () => {
     const outilsChat = "Outils: Python,Ampalibe,API chatGPT"
     const urlChat = "https://github.com/tafikaSeth/Paris_sportif.git"
     const paragraphChat = "Creation of a sports betting messenger chatbot and chatGPT-turbo integration"
+    
     const [isDisp,setIsDisp] = useState(true)
     const [roundSelected,setRoundSelected] = useState('round-first')
     const [displayCardWeb,setDisplayCardWeb] = useState('none')
@@ -76,17 +76,16 @@ const Project = () => {
             setDisplayCardChatbot('none')
         }
     }
-
     useEffect(()=>{
         showCard()
     },[roundSelected])
     return(
         <div id="project" className="container-project">
             <div className="content-project">
-                <div className="content-project-title">
-                    <h1>My Projects</h1>
-                    <hr/>
-                </div>
+                    <div className="content-project-title">
+                        <h1>My Projects</h1>
+                        <hr/>
+                    </div>
                 <div className="content-project-myservices">
                     <div className="content-line-round">
                         <Tooltip tooltipText="Web">
@@ -115,7 +114,7 @@ const Project = () => {
                             <CardLangage/>
                             <CardLangage/>
                         </div>
-                        <div className="content-projects-for-card-design" style={{display:displayCardDesign}}>
+                        <div id="design" className="content-projects-for-card-design" style={{display:displayCardDesign}}>
                             <CardWeb backround='/assets/webDesign.png' projectName='C-KALI' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>
                         </div>
                         <div className="content-projects-for-card-ai" style={{display:displayCardChatbot}}>
