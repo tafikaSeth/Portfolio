@@ -124,7 +124,133 @@
     height: 80px;
 }
 
+
+  
+
 @media screen and (max-width: 640px) {
+    .container-contact{
+        width: 100%;
+        height: 130vh;
+        background: #212121;
+        /* margin-top: 35px; */
+    }
+    .content-contact{
+        width: 100%;
+        height: 77%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+    .content-contact h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .content-contact hr{
+        width: 60px;
+        border: 1px solid #14FF00;
+    }
+    .content-contact-cards{
+        flex-direction: column;
+    }
+    .content-contact-cardOne{
+        margin: 0;
+        text-align: center;
+    }
+    .content-contact-cardOne h2{
+        font-size: 20px;
+        width: 300px;
+    }
+    .content-contact-cardOne p{
+        width: 250px;
+        font-size: 12px;
+        text-align: start;
+        transform: translate(25%,25%);
+        /* text-align: justify; */
+    }
+    .content-contact-cardTwo{
+        width: 90%;
+        height: 80%;
+        margin: 0;
+    }
+    .content-contact-cardTwo h4{
+        width: 280px;
+        text-align: center;
+    }
+    .content-contact-cardTwo-message{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+    .content-contact-cardTwo-message input{
+        width: 490px;
+        height: 60%;
+    }
+    #input-message{
+        width: 490px;
+        height: 1000px;
+    }
+    .btnDisable{
+        width: 300px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 300px;
+        height: 500px;
+    }
+    
+}
+@media (min-width: 509px) and (max-width: 561px) {
+    .content-contact-cardTwo-message{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+    .content-contact-cardTwo-message input{
+        width: 440px;
+        height: 40%;
+    }
+    #input-message{
+        width: 440px;
+        height: 300px;
+    }
+    .btnDisable{
+        width: 440px;
+        height: 200px!important;
+    }
+    .btnActive{
+        width: 440px;
+        height: 200px!important;
+    }
+}
+@media (min-width: 460px) and (max-width: 508px) {
+    .content-contact-cardTwo-message{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+    .content-contact-cardTwo-message input{
+        width: 390px;
+        height: 40%;
+    }
+    #input-message{
+        width: 390px;
+        height: 300px;
+    }
+    .btnDisable{
+        width: 300px;
+        height: 200px!important;
+    }
+    .btnActive{
+        width: 300px;
+        height: 200px!important;
+    }
+}
+@media screen and (max-width: 400px) {
     .container-contact{
         width: 100%;
         height: 100vh;
@@ -164,7 +290,6 @@
         font-size: 12px;
         text-align: start;
         transform: translate(25%,25%);
-        /* text-align: justify; */
     }
     .content-contact-cardTwo{
         width: 90%;
@@ -179,144 +304,20 @@
         width: 90%;
         display: flex;
         align-items: center;
-        text-align: start;
-    }
-    .content-contact-cardTwo-message input{
-        width: 490px;
-        height: 40%;
-    }
-    #input-message{
-        width: 490px;
-        height: 300px;
-    }
-    .btnDisable{
-        width: 490px;
-        height: 200px;
-    }
-    .btnActive{
-        width: 310px;
-        height: 200px;
-    }
-    
-}
-@media (min-width: 509px) and (max-width: 561px) {
-    .content-contact-cardTwo-message{
-        width: 90%;
-        display: flex;
-        align-items: center;
-        text-align: start;
-    }
-    .content-contact-cardTwo-message input{
-        width: 440px;
-        height: 40%;
-    }
-    #input-message{
-        width: 440px;
-        height: 300px;
-    }
-    .btnDisable{
-        width: 440px;
-        height: 200px;
-    }
-    .btnActive{
-        width: 440px;
-        height: 200px;
-    }
-}
-@media (min-width: 460px) and (max-width: 508px) {
-    .content-contact-cardTwo-message{
-        width: 90%;
-        display: flex;
-        align-items: center;
-        text-align: start;
-    }
-    .content-contact-cardTwo-message input{
-        width: 390px;
-        height: 40%;
-    }
-    #input-message{
-        width: 390px;
-        height: 300px;
-    }
-    .btnDisable{
-        width: 390px;
-        height: 200px;
-    }
-    .btnActive{
-        width: 390px;
-        height: 200px;
-    }
-}
-@media screen and (max-width: 400px) {
-    .container-contact{
-        width: 100%;
-        height: 100vh;
-        background: #212121;
-        /* margin-top: 35px; */
-    }
-    .content-contact{
-        width: 100%;
-        height: 77%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-    }
-    .content-contact h1{
-        font-size: 20px;
-        text-align: center;
-    }
-            .content-contact hr{
-                width: 45px;
-                border: 1px solid #14FF00;
-            }
-            .content-contact-cards{
-        flex-direction: column;
-    }
-            .content-contact-cardOne{
-        margin: 0;
-        text-align: center;
-    }
-    .content-contact-cardOne h2{
-        font-size: 16px;
-        width: 300px;
-    }
-    .content-contact-cardOne p{
-        width: 250px;
-        font-size: 12px;
-        text-align: start;
-        transform: translate(25%,25%);
-    }
-    .content-contact-cardTwo{
-        width: 90%;
-        height: 70%;
-        margin: 0;
-    }
-            .content-contact-cardTwo h4{
-        width: 280px;
-        text-align: center;
-    }
-    .content-contact-cardTwo-message{
-        width: 90%;
-        display: flex;
-        align-items: center;
     }
     .content-contact-cardTwo-message input{
         width: 280px;
-        height: 30%;
+        height: 60%;
     }
     #input-message{
         width: 280px;
-        height: 300px;
+        height: 350px;
     }
     .btnDisable{
-        width: 180px;
-        height: 200px;
+        width: 200px!important;
     }
     .btnActive{
-        width: 280px;
-        height: 200px;
+        width: 200px!important;
     }
 }
     
@@ -337,10 +338,10 @@
             }
             .btnDisable{
                 width: 330px;
-                height: 200px;
+                height: 200px!important;
             }
             .btnActive{
                 width: 330px;
-                height: 200px;
+                height: 200px!important;
             }
         } 
