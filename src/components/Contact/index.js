@@ -74,13 +74,13 @@ const Contact = () => {
                         <div className="content-contact-cardTwo">
                             <div className="content-contact-cardTwo-message">
                                 <h4>Send me a message</h4>
-                                <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*" required/>
-                                <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*" required/>
-                                    <ReCAPTCHA
+                                <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*"  required/>
+                                <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*"  required/>
+                                    {/* <ReCAPTCHA
                                     ref={captcha}
                                     sitekey='6LcOs5wpAAAAAGyqC807hfWT1VBLa-qaE1HaO0PF'
                                     onChange={handleRecap}
-                                    />
+                                    /> */}
                                 <label>Your Message</label>
                                 <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message"/>
                                 <button className={isRecaptchaChecked?"btnActive":"btnDisable"} disabled={!isRecaptchaChecked} type="submit">Send message</button>
