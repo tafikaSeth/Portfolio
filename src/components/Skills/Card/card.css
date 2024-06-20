@@ -76,3 +76,29 @@
     gap: 25px;
     align-items: center;
   }
+@media screen and (max-width: 437px) {
+  .flip-box-front:hover{
+    transform: initial;
+  }
+  .flip-box-front-content h4{
+    font-size: 15px;
+  }
+  .flip-box-front-content p{
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .flip-box-back{
+    gap: 5px;
+  }
+}
+@media (min-width: 438px) and (max-width: 640px){
+  .flip-box{
+    width: 100%;
+  }
+  .flip-box-front-content h4{
+    font-size: 20px;
+  }
+  .flip-box-front-content p{
+    font-size: 16px;
+  }
+}

@@ -9,13 +9,15 @@ import Navbar from './components/Navbar';
 
 const App = () => {
   return (
+
+      
     <div className='App'>
       <Navbar/>
-      <Home id="home"/>
-       <About id="about"/>
-      <Project id="project"/>
-      {/* <Skills id="skill"/>
-      <Contact id="contact"/> */}
+      {/* <Home id="home"/>
+       <About id="about"/> */}
+      {/* <Project id="project"/> */}
+      <Skills id="skill"/>
+      {/* <Contact id="contact"/> */}
     </div>
   );
 };

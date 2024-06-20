@@ -1,5 +1,10 @@
-import { useState,useEffect } from "react";
 import React from "react";
+import { useState,useEffect } from "react";
+import { Swiper,SwiperSlide } from "swiper/react";
+import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
+import 'swiper/css'
+import 'swiper/css/free-mode';
+import 'swiper/css/scrollbar';
 import "./project.css"
 import CardWeb from "./CardWeb";
 import CardLangage from "../Skills/CardLangage";
@@ -106,9 +111,25 @@ const Project = () => {
                     </div>
                     <div className="content-projects-cards">
                         <div className="content-projects-for-card-web" style={{display:displayCardWeb}}>
-                            <CardWeb backround='/assets/home.png' projectName='MY PORTFOLIO' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
-                            <CardWeb backround='/assets/mikrea.png' projectName='MIKREA' urlButton='#mikrea' paragraph={paragraphMikrea} outils={outilsMikrea}/>
-                            <CardWeb backround='/assets/videoCall.jpg' projectName='VIDEO CALLING' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
+                            <Swiper
+                                className = 'mySwiper'
+                                spaceBetween={20}
+                                slidesPerView={3}
+                                onSlideChange={() => console.log('slide change')}
+                                onSwiper={(swiper) => console.log(swiper)}>
+                                <SwiperSlide>
+                                    <CardWeb backround='/assets/home.png' projectName='MY PORTFOLIO' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <CardWeb backround='/assets/mikrea.png' projectName='MIKREA' urlButton='#mikrea' paragraph={paragraphMikrea} outils={outilsMikrea}/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <CardWeb backround='/assets/videoCall.jpg' projectName='VIDEO CALLING' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <CardWeb backround='/assets/videoCall.jpg' projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                         <div className="content-projects-for-card-mobile" style={{display:displayCardMobile}}>
                             <CardLangage/>

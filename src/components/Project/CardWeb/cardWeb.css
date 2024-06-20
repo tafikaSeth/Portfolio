@@ -2,7 +2,6 @@
   width: 350px;
   height: 58vh;
   background: #121212;
-  transition: 0.8s;
 }
 .content-cardweb{
   width: 100%;
@@ -10,11 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.container-cardweb:hover{
-  font-family: 'Lexend',sans-serif;
-  transform: scale(1.02);
-  cursor: pointer;
 }
 .content-cardweb-image{
   width: 100%;

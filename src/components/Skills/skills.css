@@ -9,7 +9,7 @@
 .content-skills{
     width: 90%;
     height: 80vh;
-    /* background: white; */
+    /* background: red; */
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -34,8 +34,8 @@
 }
 .content-skills-myskills{
     width: 100%;
-    height: 70vh;
-    /* background: white; */
+    min-height: auto;
+    background: #121212;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,10 +63,48 @@
     margin:15px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 437px) {
     .container-skills{
-      width: 375px;
-      height: 100vh;
-      background: chocolate;
+      height: 220vh;
     }
-  }
+    .content-skills{
+        transform: translateY(0px);
+        justify-content: center;
+        align-items: center;
+    }
+    .content-skills-title{
+        /* margin-right: 280px; */
+        margin-right: 0;
+    }
+    .content-skills-title h1{
+        font-size: 20px;
+        width: 90px;
+    }
+    .content-skills-title hr{
+        width: 45px;
+        border: 1px solid #14FF00;
+    }
+    
+}
+@media (min-width: 438px) and (max-width: 640px){
+    .container-skills{
+      height: 220vh;
+      display: flex;
+    }
+    .content-skills{
+        transform: translateY(0px);
+        justify-content: center;
+        align-items: center;
+    }
+    .content-skills-title{
+        margin-right: 0;
+    }
+    .content-skills-title h1{
+        font-size: 25px;
+        width: 110px;
+    }
+    .content-skills-title hr{
+        width: 60px;
+        border: 1px solid #14FF00;
+    }
+}

@@ -131,7 +131,7 @@
     transform: translateY(20px);
   }
   .content-about-texte{
-    width: 68%;
+    width: 89%;
     transform: translateY(50px);
   }
   .content-about-texte h1{
@@ -144,7 +144,7 @@
   .content-about-texte p{
     font-size: 10px;
     text-align: justify;
-    width: 230px;
+    width: 300px;
   }
   .content-about-btn{
     width: 240px;
