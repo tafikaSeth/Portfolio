@@ -1,13 +1,11 @@
 import React from "react";
 import { useState,useEffect } from "react";
 import { Swiper,SwiperSlide } from "swiper/react";
-import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
 import 'swiper/css'
 import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 import "./project.css"
 import CardWeb from "./CardWeb";
-import CardLangage from "../Skills/CardLangage";
 import Tooltip from "./Tooltip";
 
 const Project = () => {
@@ -35,6 +33,13 @@ const Project = () => {
     const [roundDivTwo,setRoundDivTwo] = useState('round-second')
     const [roundDivThree,setRoundDivThree] = useState('round-third')
     const [roundDivFour,setRoundDivFour] = useState('round-fourth')
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+    //getWidth to change the slider per view
+    const getWidth = () => {
+        setWindowWidth(window.innerWidth)
+        console.log( "ty "+windowWidth);
+    }
 
     const handleClickRound = (e) => {
         const roundClicked = e.target.className
@@ -45,7 +50,6 @@ const Project = () => {
         }else{
             console.log("erreur eh");
         }
-
     }
 
     const showCard = () => {
@@ -83,7 +87,11 @@ const Project = () => {
     }
     useEffect(()=>{
         showCard()
-    },[roundSelected])
+        window.addEventListener('resize',getWidth)
+        return () => {
+            window.removeEventListener('resize',getWidth)
+        }
+    },[roundSelected,windowWidth])
     return(
         <div id="project" className="container-project">
             <div className="content-project">
@@ -114,9 +122,8 @@ const Project = () => {
                             <Swiper
                                 className = 'mySwiper'
                                 spaceBetween={20}
-                                slidesPerView={3}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}>
+                                slidesPerView={windowWidth<=768 ? 1 : 3}
+                                >
                                 <SwiperSlide>
                                     <CardWeb backround='/assets/home.png' projectName='MY PORTFOLIO' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
                                 </SwiperSlide>
@@ -132,8 +139,7 @@ const Project = () => {
                             </Swiper>
                         </div>
                         <div className="content-projects-for-card-mobile" style={{display:displayCardMobile}}>
-                            <CardLangage/>
-                            <CardLangage/>
+                            <CardWeb backround='/assets/videoCall.jpg' projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>  
                         </div>
                         <div id="design" className="content-projects-for-card-design" style={{display:displayCardDesign}}>
                             <CardWeb backround='/assets/webDesign.png' projectName='C-KALI' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>

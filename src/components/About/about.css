@@ -207,6 +207,7 @@
       background-size: contain;
     }
     .content-about-texteOne hr{
+      width: 45px;
       margin-left: 0px;
       transform: translateY(-14px);
     }

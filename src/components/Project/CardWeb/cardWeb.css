@@ -20,14 +20,12 @@
 .content-cardweb-texte{
   width: 100%;
   height: 50%;
-  /* background: violet; */
 
 }
 .content-cardweb-texte h4{
   font-family: 'Lexend',sans-serif;
   color: #fff;
   text-align: center;
-  /* font-size: 15px; */
   font-weight: 400;
   letter-spacing: 5px;
 }
@@ -46,37 +44,390 @@
   border: 1px solid #121212;
   border-radius: 5px;
   cursor: pointer;
-  /* float: right; */
   float: right;
+  /* transform: translateY(px); */
 }
-@media screen and (max-width: 339px) {
+
+  @media screen and (max-width: 768px) {
+    .container-cardweb{
+      width: 600px;
+      height: 60vh;
+    }
+    .content-cardweb{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .content-cardweb-texte{
+      width: 90%;
+      height: 40vh;
+    }
+    .content-cardweb-texte h4{
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .content-cardweb-texte p{
+      width: 500px;
+      font-size: 16px;
+      text-align: justify;
+    }
+    .btnCardWeb{
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btnCardWeb button{
+      width: 300px;
+      height: 50px;
+      font-size: 15px;
+    }
+  }
+@media screen and (max-width: 735px){
   .container-cardweb{
-    width: 300px;
-    height: 40vh;
+    width: 570px;
+    height: 60vh;
+  }
+  .content-cardweb{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: violet; */
   }
-  .content-cardweb-image{
-    width: 100%;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  .content-cardweb-texte{
+    width: 90%;
+    height: 40vh;
   }
   .content-cardweb-texte h4{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .content-cardweb-texte p{
+    width: 500px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .btnCardWeb{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnCardWeb button{
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .container-cardweb{
+    width: 550px;
+    height: 60vh;
+  }
+  .content-cardweb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-cardweb-texte{
+    width: 90%;
+    height: 40vh;
+  }
+  .content-cardweb-texte h4{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .content-cardweb-texte p{
+    width: 500px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .btnCardWeb{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnCardWeb button{
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 685px){
+  .container-cardweb{
+    width: 530px;
+    height: 60vh;
+  }
+  .content-cardweb-texte p{
+    width: 450px;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 660px){
+  .container-cardweb{
+    width: 500px;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 625px){
+  .container-cardweb{
+    width: 480px;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 600px){
+  .container-cardweb{
+    width: 450px;
+    height: 60vh;
+  }
+  .content-cardweb-texte p{
+    width: 400px;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 565px) {
+  .container-cardweb{
+    width: 420px;
+    height: 60vh;
+  }
+  .content-cardweb-texte p{
+    width: 370px;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 524px) {
+  .container-cardweb{
+    width: 400px;
+    height: 55vh;
+  }
+  .content-cardweb-texte p{
+    width: 330px;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+
+  @media screen and (max-width: 480px) {
+    .container-cardweb{
+      width: 380px;
+    }
+    .content-cardweb{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .content-cardweb-image{
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    .content-cardweb-texte{
+      width: 90%;
+      height: 40vh;
+    }
+    .content-cardweb-texte h4{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .content-cardweb-texte p{
+      width: 320px;
+      text-align: justify;
+      font-size: 14px;
+    }
+    .btnCardWeb{
+      width: 100%;
+      height: 10vh;
+      align-items: center;
+    }
+    .content-cardweb-texte button{
+      width: 300px;
+      height: 50px;
+      font-size: 15px;
+      transform: translateY(10px);
+    }
+  }
+
+@media (max-width: 450px) {
+  .container-cardweb{
+    width: 350px;
+  }
+  .content-cardweb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-cardweb-image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .content-cardweb-texte{
+    width: 90%;
+    height: 40vh;
+  }
+  .content-cardweb-texte h4{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .content-cardweb-texte p{
+    width: 260px;
+    text-align: justify;
     font-size: 12px;
+  }
+  .btnCardWeb{
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+  }
+  .content-cardweb-texte button{
+    width: 220px;
+    height: 50px;
+    font-size: 15px;
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .container-cardweb{
+    width: 320px;
+  }
+  .content-cardweb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-cardweb-image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .content-cardweb-texte{
+    width: 90%;
+    height: 40vh;
+  }
+  .content-cardweb-texte h4{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .content-cardweb-texte p{
+    width: 260px;
+    text-align: justify;
+    font-size: 12px;
+  }
+  .btnCardWeb{
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+  }
+  .content-cardweb-texte button{
+    width: 220px;
+    height: 50px;
+    font-size: 15px;
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .container-cardweb{
+    width: 300px;
+  }
+  .content-cardweb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-cardweb-image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .content-cardweb-texte{
+    width: 90%;
+    height: 40vh;
+  }
+  .content-cardweb-texte h4{
+    font-size: 16px;
     font-weight: bold;
   }
   .content-cardweb-texte p{
     font-size: 12px;
   }
+  .btnCardWeb{
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+  }
   .content-cardweb-texte button{
-    width: 90px;
-    height: 20px;
-    font-size: 12px;
+    width: 240px;
+    height: 50px;
+    font-size: 15px;
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 353px) {
+  .container-cardweb{
+    width: 280px;
+  }
+  .content-cardweb{
+    width: 250px;
+  }
+  .content-cardweb-image{
+    width: 250px;
+  }
+  .content-cardweb-texte h4{
+    font-size: 14px;
+  }
+  .content-cardweb-texte p{
+    width: 210px;
+    text-align: justify;
+  }
+  .btnCardWeb{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnCardWeb button{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .container-cardweb{
+    width: 250px;
+  }
+  .content-cardweb{
+    width: 250px;
+  }
+  .content-cardweb-image{
+    width: 250px;
+  }
+  .content-cardweb-texte h4{
+    font-size: 14px;
+  }
+  .content-cardweb-texte p{
+    width: 210px;
+    text-align: justify;
+  }
+  .btnCardWeb{
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+  }
+  .btnCardWeb button{
+    width: 200px;
+    transform: translateY(10px);
   }
 }

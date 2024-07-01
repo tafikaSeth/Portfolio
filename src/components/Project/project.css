@@ -133,23 +133,176 @@
     align-items: center;
 }
 
-@media screen and (max-width: 339px) {
+@media screen and (max-width: 768px) {
+    .container-project{
+        width: 100%;
+      }
+    .content-project{
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(90px);
+      }
+      .content-project-title{
+          width: 35%;
+          transform: translateY(70px);
+      }
+      .content-project h1{
+          font-size: 25px;
+      }
+      .content-project hr{
+          width: 65px;
+          border: 1px solid #14FF00;
+      }
+      .content-project-myservices{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 85vh;
+          background: #212121;
+          gap: 0;
+          /* background: red; */
+      }
+      .content-line-round{
+          display: block;
+          width: 80%;
+          height: fit-content;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+      }
+      .line-first{
+          display: none;
+      }
+      .content-projects-cards{
+          height: 60vh;
+          transform: translateY(20px);
+      }
+      .content-projects-for-card-web{
+          display: flex;
+          flex-direction: row;
+      
+      }
+      .content-projects-for-card-mobile{
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .content-projects-for-card-design {
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+      .content-projects-for-card-ai {
+          width: 100%;
+      }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .container-project{
+        width: 100%;
+      }
+      .content-project{
+          width: 100%;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(90px);
+          /* margin-top: 150px; */
+      }
+      .content-project-title{
+          width: 40%;
+          transform: translateY(70px);
+      }
+      .content-project h1{
+          font-size: 22px;
+      }
+      .content-project hr{
+          width: 45px;
+          border: 1px solid #14FF00;
+      }
+      .content-project-myservices{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 88vh;
+          background: #212121;
+          gap: 0;
+          /* background: red; */
+      }
+      .content-line-round{
+          display: block;
+          width: 80%;
+          height: fit-content;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+      }
+      .line-first{
+          display: none;
+      }
+      .content-projects-cards{
+          height: 60vh;
+          transform: translateY(20px);
+      }
+      .content-projects-for-card-web{
+          display: flex;
+          flex-direction: row;
+      
+      }
+      .content-projects-for-card-mobile{
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .content-projects-for-card-design {
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+      .content-projects-for-card-ai {
+          width: 100%;
+      }
+}
+
+@media screen and (max-width: 480px) {
     .container-project{
       width: 100%;
-      min-height: 100vh;
       background: #212121;
     }
     .content-project{
         width: 100%;
-        min-height: 91vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 60px;
+        transform: translateY(90px);
+        /* margin-top: 150px; */
     }
     .content-project-title{
-        width: 70%;
+        width: 40%;
+        transform: translateY(70px);
     }
     .content-project h1{
         font-size: 20px;
@@ -163,7 +316,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        min-height: 88vh;
         background: #212121;
         gap: 0;
         /* background: red; */
@@ -181,21 +334,12 @@
         display: none;
     }
     .content-projects-cards{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        height: 60vh;
+        transform: translateY(20px);
     }
     .content-projects-for-card-web{
-        /* width: 100%;
-        background: red;
-        min-height: 100vh; */
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
     
     }
     .content-projects-for-card-mobile{
@@ -215,12 +359,233 @@
     }
     .content-projects-for-card-ai {
         width: 100%;
-        /* height: 100%; */
-        /* background-color: red; */
-        /* display: none; */
-        /* flex-direction: column; */
-        /* flex-wrap: wrap; */
-        /* justify-content: center; */
-        /* align-items: center; */
     }
   }
+
+@media (max-width: 450px) {
+    .container-project{
+        width: 100%;
+        background: #212121;
+      }
+      .content-project{
+          width: 100%;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(90px);
+          /* margin-top: 150px; */
+      }
+      .content-project-title{
+          width: 40%;
+          transform: translateY(70px);
+      }
+      .content-project h1{
+          font-size: 20px;
+      }
+      .content-project hr{
+          width: 45px;
+          border: 1px solid #14FF00;
+      }
+      .content-project-myservices{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 88vh;
+          background: #212121;
+          gap: 0;
+          /* background: red; */
+      }
+      .content-line-round{
+          display: block;
+          width: 80%;
+          height: fit-content;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+      }
+      .line-first{
+          display: none;
+      }
+      .content-projects-cards{
+          height: 60vh;
+          transform: translateY(20px);
+      }
+      .content-projects-for-card-web{
+          display: flex;
+          flex-direction: row;
+      
+      }
+      .content-projects-for-card-mobile{
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .content-projects-for-card-design {
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+      .content-projects-for-card-ai {
+          width: 100%;
+      }
+}
+
+@media screen and (max-width: 418px) {
+    .container-project{
+        width: 100%;
+        background: #212121;
+      }
+      .content-project{
+          width: 100%;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(90px);
+          /* margin-top: 150px; */
+      }
+      .content-project-title{
+          width: 40%;
+          transform: translateY(70px);
+      }
+      .content-project h1{
+          font-size: 20px;
+      }
+      .content-project hr{
+          width: 45px;
+          border: 1px solid #14FF00;
+      }
+      .content-project-myservices{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 88vh;
+          background: #212121;
+          gap: 0;
+          /* background: red; */
+      }
+      .content-line-round{
+          display: block;
+          width: 80%;
+          height: fit-content;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+      }
+      .line-first{
+          display: none;
+      }
+      .content-projects-cards{
+          height: 60vh;
+          transform: translateY(20px);
+      }
+      .content-projects-for-card-web{
+          display: flex;
+          flex-direction: row;
+      
+      }
+      .content-projects-for-card-mobile{
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .content-projects-for-card-design {
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+      .content-projects-for-card-ai {
+          width: 100%;
+      }
+}
+
+@media screen and (max-width: 320px) {
+    .container-project{
+        width: 100%;
+      }
+      .content-project{
+          width: 100%;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(90px);
+      }
+      .content-project-title{
+          width: 40%;
+          transform: translateY(70px);
+      }
+      .content-project h1{
+          font-size: 20px;
+      }
+      .content-project hr{
+          width: 45px;
+          border: 1px solid #14FF00;
+      }
+      .content-project-myservices{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 88vh;
+          background: #212121;
+          gap: 0;
+      }
+      .content-line-round{
+          display: block;
+          width: 80%;
+          height: fit-content;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+      }
+      .line-first{
+          display: none;
+      }
+      .content-projects-cards{
+          height: 60vh;
+          transform: translateY(20px);
+      }
+      .content-projects-for-card-web{
+          display: flex;
+          flex-direction: row;
+      
+      }
+      .content-projects-for-card-mobile{
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .content-projects-for-card-design {
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+      .content-projects-for-card-ai {
+          width: 100%;
+      }
+}
