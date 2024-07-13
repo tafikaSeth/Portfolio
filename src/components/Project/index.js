@@ -9,17 +9,17 @@ import CardWeb from "./CardWeb";
 import Tooltip from "./Tooltip";
 
 const Project = () => {
-    const paragraphPortfolio = "Creation of my portfolio to show you what I'm capable of in the world of web development"
-    const outilsPortfolio = "Outils: HTML,CSS,Javascript,ReactJs."
+    const paragraphPortfolio = "Creation of my portfolio to show you what i'm capable in web development"
+    const outilsPortfolio = "Tools: HTML,CSS,ReactJs."
     const urlPortfolio = "https://github.com/tafikaSeth/Portfolio.git"
-    const paragraphMikrea = "Integration of the website named MikRea project to broaden my web development skills"
-    const outilsMikrea = "Outils: HTML,CSS,Javascript,NextJs."
+    const paragraphMikrea = "Integration the website MikRea project to broaden my web development skills"
+    const outilsMikrea = "Tools: HTML,CSS,NextJs."
     const paragraphVideo = "Creation of an application to make local video calls project personnel"
-    const outilsVideo = "Outils: HTML,CSS,JavaScript,AgoraRTC,ReactJs."
+    const outilsVideo = "Tools: HTML,CSS,AgoraRTC,ReactJs."
     const paragraphKali = "Creation of a web design with prototypes for booking nutrition coaching"
-    const outilsKali = "Outil: Figma"
+    const outilsKali = "Tool: Figma"
     const urlKali = "https://www.figma.com/proto/vCnZw2XyJcvy9a9fShqLdS/Plateforme-de-r%C3%A9servation-de-service-de-coaching-en-nutrition?node-id=21-16&starting-point-node-id=21%3A16"
-    const outilsChat = "Outils: Python,Ampalibe,API chatGPT"
+    const outilsChat = "Tools: Python,Ampalibe,API chatGPT"
     const urlChat = "https://github.com/tafikaSeth/Paris_sportif.git"
     const paragraphChat = "Creation of a sports betting messenger chatbot and chatGPT-turbo integration"
     
@@ -134,7 +134,7 @@ const Project = () => {
                                     <CardWeb backround='/assets/videoCall.jpg' projectName='VIDEO CALLING' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround='/assets/videoCall.jpg' projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
+                                    <CardWeb backround='/assets/enjoyB.jpg' projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
                                 </SwiperSlide>
                             </Swiper>
                         </div>

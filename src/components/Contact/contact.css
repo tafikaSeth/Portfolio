@@ -9,7 +9,6 @@
 .content-contact{
     width: 90%;
     height: 80vh;
-    /* background: red; */
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -29,7 +28,6 @@
 .content-contact-cards{
     width: 100%;
     height: 100%;
-    /* background: #fff; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,7 +38,6 @@
     height: 100%;
     margin-left: 100px;
     margin-top: 50px;
-    /* background: violet; */
 }
 .content-contact-cardOne h2{
     width: 300px;
@@ -57,7 +54,7 @@
 .content-contact-cardOne p{
     font-size: 12px;
     font-weight: 100;
-    color: #fff;
+    color: #636161;
     font-family: 'Lexend',sans-serif;
 }
 .content-contact-cardTwo{
@@ -80,7 +77,6 @@
 .content-contact-cardTwo-message{
     width: 90%;
     height: 90%;
-    /* background: red; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -97,7 +93,6 @@
     width: 200px;
     height: 50px;
     background: #14FF00;
-    /* background: #373837; */
     color: #fff;
     font-family: 'Lexend',sans-serif;
     border: 1px solid #212121;
@@ -124,15 +119,297 @@
     height: 80px;
 }
 
+@media screen and (max-width: 1280px) {
+    .content-contact{
+        width: 90%;
+        height: 72vh;
+        gap: 0;
 
-  
+    }
+    .content-contact-cardOne{
+        margin-top: 0;
+    }
+    .content-contact-cardTwo{
+        width: 100%;
+        height: 90%;
+        margin: 0;
+    }
+    .content-contact-cardTwo-message input{
+        width: 650px;
+        height: 50%;
+    }
+    #input-message{
+        width: 650px;
+        height: 500px;
+    }
+    .btnDisable{
+        width: 400px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 400px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1221px) {
+    .content-contact-cardTwo-message input{
+        width: 600px;
+        height: 50%;
+    }
+    #input-message{
+        width: 600px;
+        height: 500px;
+    }
+    .btnDisable{
+        width: 350px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 350px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1162px) {
+    .content-contact-cardTwo-message input{
+        width: 550px;
+        height: 50%;
+    }
+    #input-message{
+        width: 550px;
+        height: 500px;
+    }
+    .btnDisable{
+        width: 300px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 300px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1103px) {
+    .content-contact-cardTwo-message input{
+        width: 500px;
+        height: 50%;
+    }
+    #input-message{
+        width: 500px;
+        height: 500px;
+    }
+    .btnDisable{
+        width: 250px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 250px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1045px) {
+    .content-contact-cardTwo-message input{
+        width: 450px;
+        height: 50%;
+    }
+    #input-message{
+        width: 450px;
+        height: 500px;
+    }
+    .btnDisable{
+        width: 200px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 200px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .content-contact{
+        width: 90%;
+        height: 72vh;
+        gap: 0;
+    }
+    .content-contact-cardTwo{
+        width: 100%;
+        height: 90%;
+    }
+}
+@media screen and (max-width: 990px) {
+    .content-contact-cards{
+        height: 80%;
+    }
+    .content-contact-cardOne{
+        height: 100%;
+    }
+    .content-contact-cardTwo{
+        width: 70%;
+        height: 100%;
+    }
+    .content-contact-cardTwo-message{
+        width: 90%;
+    }
+    .content-contact-cardTwo-message input{
+        width: 400px;
+        height: 60%;
+    }
+    #input-message{
+        width: 400px;
+        height: 500px;
+    }
+    .btnDisable{
+        width: 250px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 250px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 928px) {
+    .content-contact-cardTwo-message input{
+        width: 350px;
+        height: 60%;
+    }
+    #input-message{
+        width: 350px;
+        height: 500px;
+    }
+}
+@media  screen and (max-width: 865px) {
+    .content-contact-cardTwo-message input{
+        width: 300px;
+        height: 60%;
+    }
+    #input-message{
+        width: 300px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 804px) {
+    .content-contact-cardTwo-message input{
+        width: 250px;
+        height: 60%;
+    }
+    #input-message{
+        width: 250px;
+        height: 500px;
+    }
+    .btnDisable{
+        width: 200px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 200px;
+        height: 500px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .container-contact{
+        width: 100%;
+        height: 130vh;
+        background: #212121;
+    }
+    .content-contact{
+        width: 100%;
+        height: 77%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        transform: translateY(-50px);
+    }
+    .content-contact-title{
+        width: 20%;
+    }
+    .content-contact h1{
+        font-size: 25px;
+    }
+    .content-contact hr{
+        width: 60px;
+        border: 1px solid #14FF00;
+    }
+    .content-contact-cards{
+        flex-direction: column;
+    }
+    .content-contact-cardOne{
+        margin: 0;
+        text-align: center;
+    }
+    .content-contact-cardOne h2{
+        font-size: 22px;
+        width: 300px;
+    }
+    .content-contact-cardOne h5{
+        font-size: 16px;
+    }
+    .content-contact-cardOne p{
+        width: 250px;
+        font-size: 14px;
+        text-align: start;
+        transform: translate(25%,25%);
+    }
+    .content-contact-cardTwo{
+        width: 70%;
+        height: 90%;
+        margin: 0;
+    }
+    .content-contact-cardTwo h4{
+        width: 280px;
+        text-align: center;
+    }
+    .content-contact-cardTwo-message{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+    .content-contact-cardTwo-message input{
+        width: 450px;
+        height: 60%;
+    }
+    #input-message{
+        width: 450px;
+        height: 1000px;
+    }
+    .btnDisable{
+        width: 300px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 300px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 678px) {
+    .content-contact-title h1{
+        font-size: 23px;
+    }
+    .content-contact-cardTwo-message input{
+        width: 350px;
+        height: 60%;
+    }
+    #input-message{
+        width: 350px;
+        height: 1000px;
+    }
+    .btnDisable{
+        width: 250px!important;
+        height: 500px!important;
+    }
+    .btnActive{
+        width: 250px;
+        height: 500px;
+    }
+}
 
 @media screen and (max-width: 640px) {
     .container-contact{
         width: 100%;
         height: 130vh;
         background: #212121;
-        /* margin-top: 35px; */
     }
     .content-contact{
         width: 100%;
@@ -143,9 +420,11 @@
         align-items: center;
         gap: 0px;
     }
+    .content-contact-title{
+        width: 40%;
+    }
     .content-contact h1{
         font-size: 25px;
-        text-align: center;
     }
     .content-contact hr{
         width: 60px;
@@ -167,7 +446,6 @@
         font-size: 12px;
         text-align: start;
         transform: translate(25%,25%);
-        /* text-align: justify; */
     }
     .content-contact-cardTwo{
         width: 90%;
@@ -203,6 +481,9 @@
     
 }
 @media (min-width: 509px) and (max-width: 561px) {
+    .content-contact-title{
+        width: 40%;
+    }
     .content-contact-cardTwo-message{
         width: 90%;
         display: flex;
@@ -227,6 +508,9 @@
     }
 }
 @media (min-width: 460px) and (max-width: 508px) {
+    .content-contact-title{
+        width: 40%;
+    }
     .content-contact-cardTwo-message{
         width: 90%;
         display: flex;
@@ -250,12 +534,40 @@
         height: 200px!important;
     }
 }
+
+
+@media (min-width: 401px) and (max-width: 459px) {
+.content-contact-title{
+    width: 40%;
+}
+.content-contact-cardTwo-message{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+.content-contact-cardTwo-message input{
+    width: 330px;
+    height: 40%;
+}
+#input-message{
+    width: 330px;
+    height: 300px;
+}
+.btnDisable{
+    width: 330px;
+    height: 200px!important;
+}
+.btnActive{
+    width: 330px;
+    height: 200px!important;
+}
+} 
 @media screen and (max-width: 400px) {
     .container-contact{
         width: 100%;
         height: 100vh;
         background: #212121;
-        /* margin-top: 35px; */
     }
     .content-contact{
         width: 100%;
@@ -266,9 +578,12 @@
         align-items: center;
         gap: 0px;
     }
+    .content-contact-title{
+        width: 40%;
+    }
     .content-contact h1{
+        font-size: 300px;
         font-size: 20px;
-        text-align: center;
     }
     .content-contact hr{
         width: 45px;
@@ -293,7 +608,7 @@
     }
     .content-contact-cardTwo{
         width: 90%;
-        height: 70%;
+        height: 90%;
         margin: 0;
     }
     .content-contact-cardTwo h4{
@@ -320,28 +635,22 @@
         width: 200px!important;
     }
 }
-    
-        @media (min-width: 401px) and (max-width: 459px) {
-            .content-contact-cardTwo-message{
-                width: 90%;
-                display: flex;
-                align-items: center;
-                text-align: start;
-            }
-            .content-contact-cardTwo-message input{
-                width: 330px;
-                height: 40%;
-            }
-            #input-message{
-                width: 330px;
-                height: 300px;
-            }
-            .btnDisable{
-                width: 330px;
-                height: 200px!important;
-            }
-            .btnActive{
-                width: 330px;
-                height: 200px!important;
-            }
-        } 
+@media screen and (max-width: 324px) {
+    .container-contact{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .content-contact{
+        width: 324px;
+    }
+    .content-contact-cardTwo{
+        width: 90%;
+        height: 90%;
+    }
+    .content-contact-cardTwo-message input{
+        width: 100%;
+    }
+    #input-message{
+        width: 100%;
+    }
+}

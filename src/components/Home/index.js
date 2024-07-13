@@ -15,7 +15,7 @@ const Home = () => {
             } else {
                 clearInterval(intervalId);
             }
-        }, 300); // Milliseconds between each letter
+        }, 300);
 
         return () => clearInterval(intervalId);
     }, [textToDisplay]);
@@ -35,7 +35,6 @@ const Home = () => {
             <div className="content-home">
                 <div className="content-home-name">
                     <h1>Hello,<br/>I'm <span className="word-color">{displayText}</span> <br/><span className="developer">Web Developer</span></h1>
-                    {/* <h2>Web Developer</h2> */}
                     <div className="btn-contact">
                         <button onClick={(e)=>clickContact(e,'contact')}>
                             <a href="../About">

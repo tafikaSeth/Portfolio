@@ -45,9 +45,63 @@
   border-radius: 5px;
   cursor: pointer;
   float: right;
-  /* transform: translateY(px); */
 }
 
+  @media screen and (max-width: 1280px) {
+    .container-cardweb{
+      width: 320px;
+    }
+  }
+  @media screen and (max-width: 1190px) {
+    .container-cardweb{
+      width: 300px;
+    }
+    .content-cardweb-image{
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  @media screen and (max-width: 1114px) {
+    .container-cardweb{
+      width: 280px;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    .container-cardweb{
+      width: 260px;
+    }
+    .content-cardweb-image{
+      background-position: center;
+      background-size: contain;
+    }
+    .content-cardweb-texte p{
+      width: 240px;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 953px) {
+    .container-cardweb{
+      width: 240px;
+    }
+  }
+  @media screen and (max-width: 884px) {
+    .container-cardweb{
+      width: 220px;
+    }
+    .content-cardweb-texte p{
+      width: 220px;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 801px) {
+    .container-cardweb{
+      width: 200px;
+    }
+    .content-cardweb-texte p{
+      font-size: 12px;
+      width: 200px;
+    }
+  }
   @media screen and (max-width: 768px) {
     .container-cardweb{
       width: 600px;

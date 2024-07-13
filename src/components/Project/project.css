@@ -8,7 +8,6 @@
 .content-project{
     width: 90%;
     height: 80vh;
-    /* background: white; */
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -27,8 +26,6 @@
 .content-project-myservices{
     width: 100%;
     height: 70vh;
-    /* border: 1px solid #fff; */
-    /* background: #121212; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,7 +35,6 @@
 .content-line-round{
     width: 5vw;
     height: 80%;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -94,8 +90,6 @@
 .content-projects-for-card-web{
     width: 100%;
     height: 100%;
-    /* background-color: red; */
-    /* border: 1px solid #14FF00; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -105,32 +99,37 @@
 .content-projects-for-card-mobile{
     width: 100%;
     height: 100%;
-    /* background-color: red; */
     display: none;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
 }
 .content-projects-for-card-design{
     width: 100%;
     height: 100%;
-    /* background-color: red; */
     display: none;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
 }
 .content-projects-for-card-ai{
     width: 100%;
     height: 100%;
-    /* background-color: red; */
     display: none;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .content-project{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .container-project{
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -143,7 +142,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          transform: translateY(90px);
+          transform: translateY(-20px);
       }
       .content-project-title{
           width: 35%;
@@ -297,8 +296,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translateY(90px);
-        /* margin-top: 150px; */
+        transform: translateY(-40px);
     }
     .content-project-title{
         width: 40%;
@@ -319,7 +317,6 @@
         min-height: 88vh;
         background: #212121;
         gap: 0;
-        /* background: red; */
     }
     .content-line-round{
         display: block;
@@ -374,8 +371,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          transform: translateY(90px);
-          /* margin-top: 150px; */
+          transform: translateY(-40px);
       }
       .content-project-title{
           width: 40%;
@@ -396,7 +392,6 @@
           min-height: 88vh;
           background: #212121;
           gap: 0;
-          /* background: red; */
       }
       .content-line-round{
           display: block;
@@ -451,8 +446,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          transform: translateY(90px);
-          /* margin-top: 150px; */
+          transform: translateY(-40px);
       }
       .content-project-title{
           width: 40%;
@@ -473,7 +467,6 @@
           min-height: 88vh;
           background: #212121;
           gap: 0;
-          /* background: red; */
       }
       .content-line-round{
           display: block;
@@ -527,7 +520,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          transform: translateY(90px);
+          transform: translateY(-40px);
       }
       .content-project-title{
           width: 40%;
