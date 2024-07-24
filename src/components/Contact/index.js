@@ -5,7 +5,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
     const [isRecaptchaChecked, setRecaptchaChecked] = useState(false);
-    const [nameClass,setNameClass] = useState("btnRecap")
     const captcha = useRef(null)
     const inputValue = useRef(null)
   
