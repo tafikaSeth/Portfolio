@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
+import pathReact from '../../Assets/react.png'
+import pathLaravel from '../../Assets/laravel.png'
 import "../Card/card.css"
 
 const CardFramework = ({title,image}) => {
@@ -22,9 +24,9 @@ const CardFramework = ({title,image}) => {
                     </div>
                 </div>
                 <div className="flip-box-back">
-                    <CardSkill bgColor="#192a52" borderColor="#2965F1" color="#2965F1" bgImage="/assets/react.png" percentage="60%" tech="ReactJs"/>
-                    <CardSkill bgColor="#33100C" borderColor="#FF2D20" color="#FF2D20" bgImage="/assets/laravel.png" percentage="50%" tech="Laravel"/>
-                    <CardSkill bgColor="#192a52" borderColor="#2965F1" color="#2965F1" bgImage="/assets/react.png" percentage="50%" tech="Native"/>
+                    <CardSkill bgColor="#192a52" borderColor="#2965F1" color="#2965F1" bgImage={pathReact} percentage="60%" tech="ReactJs"/>
+                    <CardSkill bgColor="#33100C" borderColor="#FF2D20" color="#FF2D20" bgImage={pathLaravel} percentage="50%" tech="Laravel"/>
+                    <CardSkill bgColor="#192a52" borderColor="#2965F1" color="#2965F1" bgImage={pathReact} percentage="50%" tech="Native"/>
                 </div>
             </div>
         </div>

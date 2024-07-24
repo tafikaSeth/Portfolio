@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
+import pathPhp from '../../Assets/php.png'
+import pathPy from '../../Assets/py.png'
+import pathTs from '../../Assets/ts.png'
 import "../Card/card.css"
 
 const CardLangage = ({title,image}) => {
@@ -22,9 +25,9 @@ const CardLangage = ({title,image}) => {
                     </div>
                 </div>
                 <div className="flip-box-back">
-                    <CardSkill bgColor="#21263d" borderColor="#4F5B93" color="#4F5B93" bgImage="/assets/php.png" percentage="70%" tech="PHP"/>
-                    <CardSkill bgColor="transparent" borderColor="#FFFFFF" color="#FFFFFF" bgImage="/assets/py.png" percentage="50%" tech="PYTHON"/>
-                    <CardSkill bgColor="#232B33" borderColor="#3178C6" color="#3178C6" bgImage="/assets/ts.png" percentage="40%" tech="TypeScript"/>
+                    <CardSkill bgColor="#21263d" borderColor="#4F5B93" color="#4F5B93" bgImage={pathPhp} percentage="70%" tech="PHP"/>
+                    <CardSkill bgColor="transparent" borderColor="#FFFFFF" color="#FFFFFF" bgImage={pathPy} percentage="50%" tech="PYTHON"/>
+                    <CardSkill bgColor="#232B33" borderColor="#3178C6" color="#3178C6" bgImage={pathTs} percentage="40%" tech="TypeScript"/>
                 </div>
             </div>
         </div>

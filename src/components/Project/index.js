@@ -5,6 +5,12 @@ import 'swiper/css'
 import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 import "./project.css"
+import bgPortfolio from '../Assets/home.png'
+import bgMikrea from '../Assets/mikrea.png'
+import bgVideoCalling from '../Assets/videoCall.jpg'
+import bgEnjoyB from '../Assets/enjoyB.jpg'
+import bgWebDesign from '../Assets/webDesign.png'
+import bgChat from '../Assets/chat.png'
 import CardWeb from "./CardWeb";
 import Tooltip from "./Tooltip";
 
@@ -125,27 +131,27 @@ const Project = () => {
                                 slidesPerView={windowWidth<=768 ? 1 : 3}
                                 >
                                 <SwiperSlide>
-                                    <CardWeb backround='/assets/home.png' projectName='MY PORTFOLIO' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
+                                    <CardWeb backround={bgPortfolio} projectName='MY PORTFOLIO' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround='/assets/mikrea.png' projectName='MIKREA' urlButton='#mikrea' paragraph={paragraphMikrea} outils={outilsMikrea}/>
+                                    <CardWeb backround={bgMikrea} projectName='MIKREA' urlButton='#mikrea' paragraph={paragraphMikrea} outils={outilsMikrea}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround='/assets/videoCall.jpg' projectName='VIDEO CALLING' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
+                                    <CardWeb backround={bgVideoCalling} projectName='VIDEO CALLING' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround='/assets/enjoyB.jpg' projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
+                                    <CardWeb backround={bgEnjoyB} projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
                                 </SwiperSlide>
                             </Swiper>
                         </div>
                         <div className="content-projects-for-card-mobile" style={{display:displayCardMobile}}>
-                            <CardWeb backround='/assets/videoCall.jpg' projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>  
+                            <CardWeb backround={bgEnjoyB} projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>  
                         </div>
                         <div id="design" className="content-projects-for-card-design" style={{display:displayCardDesign}}>
-                            <CardWeb backround='/assets/webDesign.png' projectName='C-KALI' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>
+                            <CardWeb backround={bgWebDesign} projectName='C-KALI' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>
                         </div>
                         <div className="content-projects-for-card-ai" style={{display:displayCardChatbot}}>
-                            <CardWeb backround='/assets/chat.png' projectName='CHATBOT MESSENGER' urlButton={urlChat} paragraph={paragraphChat} outils={outilsChat}/>
+                            <CardWeb backround={bgChat} projectName='CHATBOT MESSENGER' urlButton={urlChat} paragraph={paragraphChat} outils={outilsChat}/>
                         </div>
                     </div>
                 </div>

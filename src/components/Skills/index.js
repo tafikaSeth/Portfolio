@@ -5,6 +5,12 @@ import CardDb from "./CardDb";
 import CardFramework from "./CardFramework";
 import CardLangage from "./CardLangage";
 import CardVersioning from "./CardVersioning";
+import iconWeb from '../Assets/Icons/techWeb.png'
+import iconLangage from '../Assets/Icons/langage.png'
+import iconFramework from '../Assets/Icons/framework.png'
+import iconDb from '../Assets/Icons/database.png'
+import iconGit from '../Assets/Icons/versioning.png'
+import iconTools from '../Assets/Icons/tools.png'
 import "./skills.css"
 
 const Skills = () => {
@@ -16,12 +22,12 @@ const Skills = () => {
                     <hr/>
                 </div>
                 <div className="content-skills-myskills">
-                    <Card title = "Web technologies" image="/assets/techWeb.png"/>
-                    <CardLangage title="Programming languages" image="/assets/langage.png"/>
-                    <CardFramework title="Frameworks" image="/assets/framework.png"/>
-                    <CardDb title="Databases" image="/assets/database.png"/>
-                    <CardVersioning title="System versioning" image="/assets/versioning.png"/>
-                    <CardConception title="Tools" image="/assets/tools.png"/>
+                    <Card title = "Web technologies" image={iconWeb}/>
+                    <CardLangage title="Programming languages" image={iconLangage}/>
+                    <CardFramework title="Frameworks" image={iconFramework}/>
+                    <CardDb title="Databases" image={iconDb}/>
+                    <CardVersioning title="System versioning" image={iconGit}/>
+                    <CardConception title="Tools" image={iconTools}/>
                 </div>
             </div>
         </div>

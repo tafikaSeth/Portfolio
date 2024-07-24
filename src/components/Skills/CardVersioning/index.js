@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
+import pathGit from '../../Assets/github.png'
+import pathGitLab from '../../Assets/gitlab.png'
 import "../Card/card.css"
 
 const CardVersioning = ({title,image}) => {
@@ -22,8 +24,8 @@ const CardVersioning = ({title,image}) => {
                     </div>
                 </div>
                 <div className="flip-box-back">
-                    <CardSkill bgColor="transparent" borderColor="#E34F26" color="#E34F26" bgImage="/assets/github.png" percentage="60%" tech="Github"/>
-                    <CardSkill bgColor="transparent" borderColor="#2965F1" color="#2965F1" bgImage="/assets/gitlab.png" percentage="30%" tech="GitLab"/>
+                    <CardSkill bgColor="transparent" borderColor="#E34F26" color="#E34F26" bgImage={pathGit} percentage="60%" tech="Github"/>
+                    <CardSkill bgColor="transparent" borderColor="#2965F1" color="#2965F1" bgImage={pathGitLab} percentage="30%" tech="GitLab"/>
                 </div>
             </div>
         </div>

@@ -98,7 +98,7 @@
 .content-home-image{
   width: 45%;
   height: 100vh;
-  background-image: url('../../../public/assets/bg1.jpg');
+  background-image: url('../Assets/bg1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -283,7 +283,6 @@
     width: 70%;
     height: 400px;
     transform: translateY(5px);
-    background-image: url('../../../public/assets/bg1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -358,7 +357,6 @@
     width: 50%;
     height: 400px;
     transform: translateY(5px);
-    background-image: url('../../../public/assets/bg1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

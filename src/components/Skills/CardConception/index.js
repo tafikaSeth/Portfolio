@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
+import pathPs from '../../Assets/fig.png'
+import pathFigma from '../../Assets/fig.png'
+import pathAi from '../../Assets/ail.png'
 import "../Card/card.css"
 
 const CardConception = ({title,image}) => {
@@ -22,9 +25,9 @@ const CardConception = ({title,image}) => {
                     </div>
                 </div>
                 <div className="flip-box-back">
-                    <CardSkill bgColor="transparent" borderColor="#31A8FF" color="#31A8FF" bgImage="/assets/ps.png" percentage="20%" tech="Photoshop"/>
-                    <CardSkill bgColor="transparent" borderColor="#F24E1E" color="#F24E1E" bgImage="/assets/fig.png" percentage="40%" tech="Figma"/>
-                    <CardSkill bgColor="transparent" borderColor="#FF9A00" color="#FF9A00" bgImage="/assets/ail.png" percentage="40%" tech="Illustrator"/>
+                    <CardSkill bgColor="transparent" borderColor="#31A8FF" color="#31A8FF" bgImage={pathPs} percentage="20%" tech="Photoshop"/>
+                    <CardSkill bgColor="transparent" borderColor="#F24E1E" color="#F24E1E" bgImage={pathFigma} percentage="40%" tech="Figma"/>
+                    <CardSkill bgColor="transparent" borderColor="#FF9A00" color="#FF9A00" bgImage={pathAi} percentage="40%" tech="Illustrator"/>
                 </div>
             </div>
         </div>

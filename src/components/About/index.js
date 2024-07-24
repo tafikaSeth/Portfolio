@@ -1,4 +1,5 @@
 import React from "react"
+import iconDowload from '../Assets/Icons/download.png'
 import "./about.css"
 
 const About = () => {
@@ -16,11 +17,11 @@ const About = () => {
                         <p>Curious and always on the lookout for new knowledge.I strive to keep up to date with the latest technologies and industry trends.</p>
                     </div>
                     <div className="content-about-btn">
-                        <a href="/tafika.pdf" download>
+                        <a href="../Assets/files/tafika1.pdf" download>
                         <button className="button" type="button">
                             <span className="button-text">DOWNLOAD CV</span>
                             <span className="button-icon">
-                                <img className="svg" src="/assets/download.png" alt='dowloadCv'/>
+                                <img className="svg" src={iconDowload} alt='dowloadCv'/>
                             </span>
                         </button>
                         </a>

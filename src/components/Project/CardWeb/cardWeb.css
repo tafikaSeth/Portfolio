@@ -13,7 +13,6 @@
 .content-cardweb-image{
   width: 100%;
   height: 50%;
-  background-image: url('/public/assets//web.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
