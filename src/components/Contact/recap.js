@@ -17,7 +17,7 @@ const Recapctha = () => {
       <>
         <ReCAPTCHA
         ref={captcha}
-        sitekey='6LfZqT8pAAAAAPsRPYM2OJdo_ItY_WrtAC1Ro1P_'
+        sitekey='6LcL5DwqAAAAAFI6oJ0ZTPK-eiWe6F8mudOqx0jl'
         onChange={handleRecap}
         />
         <input ref={inputValue} placeholder='Your message'/>
