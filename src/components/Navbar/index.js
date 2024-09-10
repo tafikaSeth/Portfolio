@@ -6,16 +6,6 @@ import pathIn from '../Assets/Icons/in.png'
 import "./navbar.css"
 
 const Navbar = () => {
-    const handleMenuClick = (e, sectionId) => {
-        e.preventDefault();
-        const section = document.getElementById(sectionId);
-        if (section) {
-            window.scrollTo({
-                top: section.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    };
 
     const openMenuMobile = () => {
         document.getElementById("myNav").style.width = "100%";
