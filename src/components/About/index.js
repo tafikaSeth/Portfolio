@@ -17,7 +17,7 @@ const About = () => {
                         <p>Curious and always on the lookout for new knowledge.I strive to keep up to date with the latest technologies and industry trends.</p>
                     </div>
                     <div className="content-about-btn">
-                        <a href="../Assets/files/tafika1.pdf" download>
+                        <a href="../Assets/files/Seth.pdf" download>
                         <button className="button" type="button">
                             <span className="button-text">DOWNLOAD CV</span>
                             <span className="button-icon">
