@@ -1,20 +1,19 @@
 import React, { useState,useRef } from "react";
 import "./contact.css"
 import emailjs from "emailjs-com"
-import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
-    const [isRecaptchaChecked, setRecaptchaChecked] = useState(false);
-    const captcha = useRef(null)
+    // const [isRecaptchaChecked, setRecaptchaChecked] = useState(false);
+    // const captcha = useRef(null)
     const inputValue = useRef(null)
   
-    const handleRecap=(value)=>{
-      console.log(captcha.current.getValue());
-      if(captcha.current.getValue()){
-        setRecaptchaChecked(!!value);
-      }
+    // const handleRecap=(value)=>{
+    //   console.log(captcha.current.getValue());
+    //   if(captcha.current.getValue()){
+    //     setRecaptchaChecked(!!value);
+    //   }
 
-    }
+    // }
 
     const[formData, setFormData] = useState({
         userName:'',
@@ -77,14 +76,14 @@ const Contact = () => {
                                 <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*"  required/>
                                 <label>Your Message</label>
                                 <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message"/>
-                                <div className="recaptcha-container">
+                                {/* <div className="recaptcha-container">
                                     <ReCAPTCHA
                                     ref={captcha}
                                     sitekey='6LcOs5wpAAAAAGyqC807hfWT1VBLa-qaE1HaO0PF'
                                     onChange={handleRecap}
                                     />
-                                </div>  
-                                <button className={isRecaptchaChecked?"btnActive":"btnDisable"} disabled={!isRecaptchaChecked} type="submit">Send message</button>
+                                </div>   */}
+                                <button className="btnActive" type="submit">Send message</button>
                             </div>
                         </div>
                     </div>
