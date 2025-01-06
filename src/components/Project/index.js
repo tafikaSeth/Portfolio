@@ -9,6 +9,7 @@ import bgPortfolio from '../Assets/home.png'
 import bgMikrea from '../Assets/mikrea.png'
 import bgVideoCalling from '../Assets/videoCall.jpg'
 import bgEnjoyB from '../Assets/enjoyB.jpg'
+import bgMobile from '../Assets/mobilegeo.jpg'
 import bgWebDesign from '../Assets/webDesign.png'
 import bgChat from '../Assets/chat.png'
 import CardWeb from "./CardWeb";
@@ -16,16 +17,20 @@ import Tooltip from "./Tooltip";
 
 const Project = () => {
     const paragraphPortfolio = "Creation of my portfolio to show you what i'm capable in web development"
-    const outilsPortfolio = "Tools: HTML,CSS,ReactJs."
+    const outilsPortfolio = "Techno: ReactJs, Swiper."
     const urlPortfolio = "https://github.com/tafikaSeth/Portfolio.git"
     const paragraphMikrea = "Integration the website MikRea project to broaden my web development skills"
-    const outilsMikrea = "Tools: HTML,CSS,NextJs."
+    const outilsMikrea = "Techno: NextJs."
     const paragraphVideo = "Creation of an application to make local video calls project personnel"
-    const outilsVideo = "Tools: HTML,CSS,AgoraRTC,ReactJs."
+    const outilsVideo = "Techno: ReactJs, AgoraRTC."
+    const paragraphEnjoyB = "Integration of an website for read, add and dowload the BD"
+    const outilsEnjoyB = "Techno: Next.Js, Swiper"
+    const paragraphMobile = "Mobile application for geolocalisation to find position stop bus, generate routes and chat"
+    const outilsMobile = "Techno: React native, react native map and GiftedChat"
     const paragraphKali = "Creation of a web design with prototypes for booking nutrition coaching"
     const outilsKali = "Tool: Figma"
     const urlKali = "https://www.figma.com/proto/vCnZw2XyJcvy9a9fShqLdS/Plateforme-de-r%C3%A9servation-de-service-de-coaching-en-nutrition?node-id=21-16&starting-point-node-id=21%3A16"
-    const outilsChat = "Tools: Python,Ampalibe,API chatGPT"
+    const outilsChat = "Techno: Python,Ampalibe,API chatGPT"
     const urlChat = "https://github.com/tafikaSeth/Paris_sportif.git"
     const paragraphChat = "Creation of a sports betting messenger chatbot and chatGPT-turbo integration"
     
@@ -140,12 +145,12 @@ const Project = () => {
                                     <CardWeb backround={bgVideoCalling} projectName='VIDEO CALLING' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround={bgEnjoyB} projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
+                                    <CardWeb backround={bgEnjoyB} projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphEnjoyB} outils={outilsEnjoyB}/>
                                 </SwiperSlide>
                             </Swiper>
                         </div>
                         <div className="content-projects-for-card-mobile" style={{display:displayCardMobile}}>
-                            <CardWeb backround={bgEnjoyB} projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>  
+                            <CardWeb backround={bgMobile} projectName='Geolocalisation' urlButton='#videoCalling' paragraph={paragraphMobile} outils={outilsMobile}/>
                         </div>
                         <div id="design" className="content-projects-for-card-design" style={{display:displayCardDesign}}>
                             <CardWeb backround={bgWebDesign} projectName='C-KALI' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>

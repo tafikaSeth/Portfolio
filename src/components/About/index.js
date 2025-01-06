@@ -3,6 +3,7 @@ import iconDowload from '../Assets/Icons/download.png'
 import "./about.css"
 
 const About = () => {
+    const cv = require('../Assets/files/Seth.pdf')
     return(
         <div id="about" className="container-about">
             <div className="content-about">
@@ -17,7 +18,7 @@ const About = () => {
                         <p>Curious and always on the lookout for new knowledge.I strive to keep up to date with the latest technologies and industry trends.</p>
                     </div>
                     <div className="content-about-btn">
-                        <a href="../Assets/files/Seth.pdf" download>
+                        <a href={cv} download={true}>
                         <button className="button" type="button">
                             <span className="button-text">DOWNLOAD CV</span>
                             <span className="button-icon">
