@@ -142,16 +142,19 @@
   .flip-box{
     width: 100%;
   }
+  .flip-box-front-content p{
+    font-size: 12px;
+  }
 }
 @media (min-width: 438px) and (max-width: 640px){
   .flip-box{
     width: 100%;
   }
   .flip-box-front-content h4{
-    font-size: 20px;
+    font-size: 16px;
   }
   .flip-box-front-content p{
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 437px) {
@@ -159,7 +162,7 @@
     transform: initial;
   }
   .flip-box-front-content h4{
-    font-size: 15px;
+    font-size: 14px;
   }
   .flip-box-front-content p{
     font-size: 12px;

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
@@ -7,7 +8,7 @@ import pathTs from '../../Assets/ts.png'
 import "../Card/card.css"
 
 const CardLangage = ({title,image}) => {
-    const contexte = "Programming languages are the core tools for writing software. Each language has its strengths and ideal use cases, whether for web development, ... ."
+    const contexte = "Programming langage are the core of tools for writing software.Each langage has its strength and ideal use case,wether for web development."
     const[isFlipped, setIsFlipped] = useState(false)
     const[front, setFront] = useState('flip-box-front')
 

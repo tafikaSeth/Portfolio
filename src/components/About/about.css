@@ -259,7 +259,7 @@
     width: 240px;
     display: flex;
     flex-direction: row;
-    transform: translateY(30px);
+    transform: translateY(15px);
   }
   .button{
     width: 230px;
@@ -302,6 +302,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translateY(20px);
   }
   .content-about-texte h1{
     font-size: 25px;
@@ -323,7 +324,6 @@
     width: 240px;
     display: flex;
     flex-direction: row;
-    transform: translateY(30px);
   }
   .button{
     width: 230px;
@@ -379,6 +379,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      transform: translateY(15px);
     }
     .content-about-texte p{
       font-size: 16px;
@@ -387,7 +388,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      transform: translateY(50px);
+      transform: translateY(40px)!important;
     }
     
   }
@@ -402,7 +403,6 @@
     }
     .content-about-image{
       width: 50%;
-      transform: translateY(-30px);
     }
     .content-about-texte h1{
       font-size: 20px;
@@ -410,6 +410,19 @@
     .content-about-texte p{
       width: 350px;
       font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 406px) {
+    .content-about-btn{
+      transform: translateY(25px)!important;
+    }
+  }
+  @media screen and (max-width: 396px) {
+    .content-about-texteOne{
+      transform: translateY(40px);
+    }
+    .content-about-btn{
+      transform: translateY(50px)!important;
     }
   }
   @media screen and (max-width: 364px) {

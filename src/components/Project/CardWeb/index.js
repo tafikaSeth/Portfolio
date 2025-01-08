@@ -10,11 +10,11 @@ const CardWeb = ({backround,projectName,paragraph,outils,urlButton}) => {
                     <h4>{projectName}</h4>
                     <p>{paragraph}</p>
                     <p>{outils}</p>
-                    <div className='btnCardWeb'>
+                    {/* <div className='btnCardWeb'>
                         <a href={`${urlButton}`}>
                             <button>GET LINK</button>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

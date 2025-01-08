@@ -103,11 +103,11 @@
 /* mobile */
 @media screen and (max-width: 768px) {
     .container-skills{
-        min-height: 230vh;
+        min-height: 220vh;
     }
     .content-skills{
         align-items: center;
-        transform: translateY(-450px);
+        transform: translateY(-370px);
     }
     .content-skills-myskills{
         width: 80%;
@@ -142,6 +142,7 @@
     .content-skills-title h1{
         font-size: 25px;
         width: 130px;
+        margin-top: -15px;
     }
     .content-skills-title hr{
         width: 60px;
