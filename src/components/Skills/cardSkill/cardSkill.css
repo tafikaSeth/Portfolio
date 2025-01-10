@@ -24,6 +24,16 @@
     text-align: center;
     transform: translate(50px, 50px);
 }
+@media screen and (max-width: 506px) {
+    .content-cardSkill{
+        background-size: contain;
+        height: 13vh;
+    }
+    .flip-box-back-content-pourcentage{
+        width: 40px;
+        height: 40px;
+    }
+}
 
 @media screen and (max-width: 437px) {
     .container-cardSkill h1{
