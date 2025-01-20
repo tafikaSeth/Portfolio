@@ -56,7 +56,7 @@ const Contact = () => {
 
     }
     return(
-        <form onSubmit={handleSubmit}>
+        <form>
             <div id="contact" className="container-contact">
                 <div className="content-contact">
                     <div className="content-contact-title">
@@ -104,7 +104,7 @@ const Contact = () => {
                                     onChange={handleRecap}
                                     />
                                 </div>   */}
-                                <button className="btnActive" type="submit">Send message</button>
+                                <button onClick={handleSubmit} className="btnActive" type="submit">Send message</button>
                             </div>
                         </motion.div>
                     </div>
