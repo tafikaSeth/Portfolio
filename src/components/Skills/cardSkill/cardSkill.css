@@ -36,18 +36,41 @@
 }
 
 @media screen and (max-width: 437px) {
+    .container-cardSkill{
+        margin: 20px 0px 0px 20px;
+    }
     .container-cardSkill h1{
-        font-size: 15px;
+        font-size: 12px;
+        transform: translate(-10px, 10px);
     }
     .content-cardSkill{
-        width: 95%;
+        width: 60%;
+        margin-top: 10px;
         background-size: contain;
     }
     .flip-box-back-content-pourcentage{
         width: 30px;
         height: 30px;
+        transform: translate(20px,30px);
     }
     .flip-box-back-content-pourcentage p{
         font-size: 10px;
+    }
+}
+@media screen and (max-width: 333px){
+    .container-cardSkill h1{
+        transform: translate(-5px,-5px);
+    }
+    .content-cardSkill{
+        width: 70%;
+        margin-top: 15px;
+    }
+    .flip-box-back-content-pourcentage{
+        width: 25px;
+        height: 25px;
+        transform: translate(15px,25px);
+    }
+    .flip-box-back-content-pourcentage p{
+        transform: translateY(-3px);
     }
 }

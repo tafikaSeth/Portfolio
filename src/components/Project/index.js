@@ -1,3 +1,6 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { useState,useEffect } from "react";
 import { Swiper,SwiperSlide } from "swiper/react";
@@ -14,6 +17,7 @@ import bgWebDesign from '../Assets/webDesign.png'
 import bgChat from '../Assets/chat.png'
 import CardWeb from "./CardWeb";
 import Tooltip from "./Tooltip";
+import { motion } from "framer-motion";
 
 const Project = () => {
     const paragraphPortfolio = "Creation of my portfolio to show you what i'm capable in web development"
@@ -107,8 +111,18 @@ const Project = () => {
         <div id="project" className="container-project">
             <div className="content-project">
                     <div className="content-project-title">
-                        <h1>My Projects</h1>
-                        <hr/>
+                        <motion.h1
+                            initial = {{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            viewport={{ once: false, amount: .5 }}                      
+                        >
+                            My Projects
+                        </motion.h1>
+                        <motion.hr
+                            initial = {{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            viewport={{ once: false, amount: .5 }}
+                        />
                     </div>
                 <div className="content-project-myservices">
                     <div className="content-line-round">

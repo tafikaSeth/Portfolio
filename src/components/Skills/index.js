@@ -12,14 +12,25 @@ import iconDb from '../Assets/Icons/database.png'
 import iconGit from '../Assets/Icons/versioning.png'
 import iconTools from '../Assets/Icons/tools.png'
 import "./skills.css"
+import { motion } from "framer-motion";
 
 const Skills = () => {
     return(
         <div id="skill" className="container-skills">
             <div className="content-skills">
                 <div className="content-skills-title">
-                    <h1>My Skills</h1>
-                    <hr/>
+                    <motion.h1
+                        initial = {{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                        viewport={{ once: false, amount: .5 }}
+                    >
+                        My Skills
+                    </motion.h1>
+                    <motion.hr
+                        initial = {{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                        viewport={{ once: false, amount: .5 }}
+                    />
                 </div>
                 <div className="content-skills-myskills">
                     <Card title = "Web technologies" image={iconWeb}/>

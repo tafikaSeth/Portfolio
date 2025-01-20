@@ -1,6 +1,7 @@
 import React from "react"
 import { useState,useEffect } from "react"
 import "./home.css"
+import { motion } from "framer-motion"
 
 const Home = () => {
     const [displayText, setDisplayText] = useState('');
@@ -36,11 +37,16 @@ const Home = () => {
                 <div className="content-home-name">
                     <h1>Hello,<br/>I'm <span className="word-color">{displayText}</span> <br/><span className="developer">Web Developer & mobile</span></h1>
                     <div className="btn-contact">
-                        <button onClick={(e)=>clickContact(e,'contact')}>
+                        <motion.button onClick={(e)=>clickContact(e,'contact')}
+                            initial = {{ scale: 0 }}
+                            whileInView={{ opacity:1, scale: 1, transition: {delay: 0.2, duration: 0.5} }}
+                            // animate = {{ scale: 1, transition: {delay: 0.2, duration: 0.5} }}
+                            viewport={{ once: false, amount: .5 }}
+                        >
                             <a href="../About">
                                 <span>CONTACT-ME</span>
                             </a>
-                        </button>
+                        </motion.button>
                     </div>
                 </div>
                 <div className="content-home-image"></div>

@@ -1,6 +1,7 @@
 import React, { useState,useRef } from "react";
 import "./contact.css"
 import emailjs from "emailjs-com" 
+import { motion } from "framer-motion";
 
 const Contact = () => {
     // const [isRecaptchaChecked, setRecaptchaChecked] = useState(false);
@@ -59,17 +60,37 @@ const Contact = () => {
             <div id="contact" className="container-contact">
                 <div className="content-contact">
                     <div className="content-contact-title">
-                        <h1>Contact Me</h1>
-                        <hr/>
+                        <motion.h1
+                            initial = {{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            viewport={{ once: false, amount: .5 }}
+                        >
+                            Contact Me
+                        </motion.h1>
+                        <motion.hr
+                            initial = {{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            viewport={{ once: false, amount: .5 }}
+                        />
                     </div>
                     <div className="content-contact-cards">
-                        <div className="content-contact-cardOne">
+                        <motion.div 
+                            className="content-contact-cardOne"
+                            initial = {{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            viewport={{ once: false, amount: .5 }}
+                        >
                             <h2>Let's chat.<br/>Tell me about your project.</h2>
                             <h5>Let's create something together</h5>
                             <p>Number phone: +261384816313</p>
                             <p>Address: Fianarantsoa Madagascar</p>
-                        </div>
-                        <div className="content-contact-cardTwo">
+                        </motion.div>
+                        <motion.div
+                            className="content-contact-cardTwo"
+                            initial = {{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            viewport={{ once: false, amount: .5 }}
+                        >
                             <div className="content-contact-cardTwo-message">
                                 <h4>Send me a message</h4>
                                 <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*"  required/>
@@ -85,7 +106,7 @@ const Contact = () => {
                                 </div>   */}
                                 <button className="btnActive" type="submit">Send message</button>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
