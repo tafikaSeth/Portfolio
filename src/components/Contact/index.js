@@ -31,7 +31,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         emailjs.send(
-            'service_seth_2323',  // Replace with your EmailJS service ID
+            'service_8haw6rm',  // Replace with your EmailJS service ID
             'template_seth_2323', // Replace with your EmailJS template ID
             {
                 from_name:formData.userEmail,
@@ -56,7 +56,7 @@ const Contact = () => {
 
     }
     return(
-        <form>
+        <form onSubmit={handleSubmit}>
             <div id="contact" className="container-contact">
                 <div className="content-contact">
                     <div className="content-contact-title">
@@ -104,7 +104,7 @@ const Contact = () => {
                                     onChange={handleRecap}
                                     />
                                 </div>   */}
-                                <button onClick={handleSubmit} className="btnActive" type="submit">Send message</button>
+                                <button className="btnActive" type="submit">Send message</button>
                             </div>
                         </motion.div>
                     </div>
