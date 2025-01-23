@@ -39,8 +39,7 @@ const Home = () => {
                     <div className="btn-contact">
                         <motion.button onClick={(e)=>clickContact(e,'contact')}
                             initial = {{ scale: 0 }}
-                            whileInView={{ opacity:1, scale: 1, transition: {delay: 0.2, duration: 0.5} }}
-                            // animate = {{ scale: 1, transition: {delay: 0.2, duration: 0.5} }}
+                            whileInView={{ opacity:1, scale: 1, transition: {delay: 0.2, duration: 0.5} }}  
                             viewport={{ once: false, amount: .5 }}
                         >
                             <a href="../About">

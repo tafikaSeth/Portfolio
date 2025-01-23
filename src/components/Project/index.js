@@ -17,7 +17,7 @@ import bgWebDesign from '../Assets/webDesign.png'
 import bgChat from '../Assets/chat.png'
 import CardWeb from "./CardWeb";
 import Tooltip from "./Tooltip";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 
 const Project = () => {
     const paragraphPortfolio = "Creation of my portfolio to show you what i'm capable in web development"
@@ -143,7 +143,10 @@ const Project = () => {
                         </Tooltip>
                     </div>
                     <div className="content-projects-cards">
-                        <div className="content-projects-for-card-web" style={{display:displayCardWeb}}>
+                        <motion.div className="content-projects-for-card-web" style={{display:displayCardWeb}}
+                            initial = {{ opacity: 1, y: 50 }}
+                            whileInView = {{ opacity: 1, y: 0, transtion:{ duration: 0.2 } }}
+                        >
                             <Swiper
                                 className = 'mySwiper'
                                 spaceBetween={20}
@@ -162,16 +165,25 @@ const Project = () => {
                                     <CardWeb backround={bgEnjoyB} projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphEnjoyB} outils={outilsEnjoyB}/>
                                 </SwiperSlide>
                             </Swiper>
-                        </div>
-                        <div className="content-projects-for-card-mobile" style={{display:displayCardMobile}}>
+                        </motion.div>
+                        <motion.div className="content-projects-for-card-mobile" style={{display:displayCardMobile}}
+                            initial = {{ opacity: 1, y: 50 }}
+                            whileInView = {{ opacity: 1, y: 0, transtion:{ duration: 0.2 } }}
+                        >
                             <CardWeb backround={bgMobile} projectName='Geolocalisation' urlButton='#videoCalling' paragraph={paragraphMobile} outils={outilsMobile}/>
-                        </div>
-                        <div id="design" className="content-projects-for-card-design" style={{display:displayCardDesign}}>
+                        </motion.div>
+                        <motion.div id="design" className="content-projects-for-card-design" style={{display:displayCardDesign}}
+                            initial = {{ opacity: 1, y: 50 }}
+                            whileInView = {{ opacity: 1, y: 0, transtion:{ duration: 0.2 } }}
+                        >
                             <CardWeb backround={bgWebDesign} projectName='C-KALI' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>
-                        </div>
-                        <div className="content-projects-for-card-ai" style={{display:displayCardChatbot}}>
+                        </motion.div>
+                        <motion.div className="content-projects-for-card-ai" style={{display:displayCardChatbot}}
+                            initial = {{ opacity: 1, y: 50 }}
+                            whileInView = {{ opacity: 1, y: 0, transtion:{ duration: 0.2 } }}
+                        >
                             <CardWeb backround={bgChat} projectName='CHATBOT MESSENGER' urlButton={urlChat} paragraph={paragraphChat} outils={outilsChat}/>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

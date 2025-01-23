@@ -38,8 +38,8 @@ const About = () => {
                     </div>
                     <motion.div
                         className="content-about-btn"
-                        initial = {{ opacity:0, x: -50 }}
-                        whileInView={{ opacity:1, x: 0, transition: {delay: 0.2, duration: 0.5} }}
+                        initial = {{ scale: 0 }}
+                        whileInView={{ opacity:1, scale: 1, transition: {delay: 0.2, duration: 0.5} }}  
                         viewport={{ once: false, amount: .5 }}
                     >
                         <a href={cv} download={true}>

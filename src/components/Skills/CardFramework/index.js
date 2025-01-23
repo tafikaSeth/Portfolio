@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
 import pathReact from '../../Assets/react.png'
 import pathLaravel from '../../Assets/laravel.png'
 import "../Card/card.css"
+import { motion } from 'framer-motion'
 
 const CardFramework = ({title,image}) => {
     const contexte = "Frameworks provide a structured foundation to streamline the development process. They offer pre-written code, tools, and libraries."
@@ -14,7 +16,11 @@ const CardFramework = ({title,image}) => {
         setIsFlipped(!isFlipped)
     }
     return(
-        <div className="flip-box" onClick={handleClick}>
+        <motion.div className="flip-box" onClick={handleClick}
+            initial = {{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.4, duration: 0.7 } }}
+            viewport={{ once: false, amount: .5 }}
+        >
             <div className={`flip-box-inner ${isFlipped ? 'flipped' : ''}`}>
                 <div className={front}>
                     <div className='flip-box-front-content'>
@@ -29,7 +35,7 @@ const CardFramework = ({title,image}) => {
                     <CardSkill bgColor="#192a52" borderColor="#2965F1" color="#2965F1" bgImage={pathReact} percentage="50%" tech="Native"/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default CardFramework

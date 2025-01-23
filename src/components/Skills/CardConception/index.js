@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
@@ -5,6 +6,7 @@ import pathPs from '../../Assets/fig.png'
 import pathFigma from '../../Assets/fig.png'
 import pathAi from '../../Assets/ail.png'
 import "../Card/card.css"
+import { motion } from 'framer-motion'
 
 const CardConception = ({title,image}) => {
     const contexte = "Design tools is increasingly valuable, these tools enhance the development process by enabling better design, improving user experience."
@@ -15,7 +17,11 @@ const CardConception = ({title,image}) => {
         setIsFlipped(!isFlipped)
     }
     return(
-        <div className="flip-box" onClick={handleClick}>
+        <motion.div className="flip-box" onClick={handleClick}
+            initial = {{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.7, duration: 1 } }}
+            viewport={{ once: false, amount: .5 }}
+        >
             <div className={`flip-box-inner ${isFlipped ? 'flipped' : ''}`}>
                 <div className={front}>
                     <div className='flip-box-front-content'>
@@ -30,7 +36,7 @@ const CardConception = ({title,image}) => {
                     <CardSkill bgColor="transparent" borderColor="#FF9A00" color="#FF9A00" bgImage={pathAi} percentage="40%" tech="Illustrator"/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default CardConception

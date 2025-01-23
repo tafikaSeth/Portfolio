@@ -20,14 +20,14 @@ const Skills = () => {
             <div className="content-skills">
                 <div className="content-skills-title">
                     <motion.h1
-                        initial = {{ opacity: 0, x: -50 }}
+                        initial = {{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
-                        viewport={{ once: false, amount: .5 }}
+                        viewport={{ once: false, amount: .5}}
                     >
                         My Skills
                     </motion.h1>
                     <motion.hr
-                        initial = {{ opacity: 0, x: 50 }}
+                        initial = {{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
                         viewport={{ once: false, amount: .5 }}
                     />

@@ -6,6 +6,7 @@ import pathPhp from '../../Assets/php.png'
 import pathPy from '../../Assets/py.png'
 import pathTs from '../../Assets/ts.png'
 import "../Card/card.css"
+import { motion } from 'framer-motion'
 
 const CardLangage = ({title,image}) => {
     const contexte = "Programming langage are the core of tools for writing software.Each langage has its strength and ideal use case,wether for web development."
@@ -16,7 +17,11 @@ const CardLangage = ({title,image}) => {
         setIsFlipped(!isFlipped)
     }
     return(
-        <div className="flip-box" onClick={handleClick}>
+        <motion.div className="flip-box" onClick={handleClick}
+            initial = {{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.3, duration: 0.6 } }}
+            viewport={{ once: false, amount: .5 }}
+        >
             <div className={`flip-box-inner ${isFlipped ? 'flipped' : ''}`}>
                 <div className={front}>
                     <div className='flip-box-front-content'>
@@ -31,7 +36,7 @@ const CardLangage = ({title,image}) => {
                     <CardSkill bgColor="#232B33" borderColor="#3178C6" color="#3178C6" bgImage={pathTs} percentage="40%" tech="TypeScript"/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default CardLangage

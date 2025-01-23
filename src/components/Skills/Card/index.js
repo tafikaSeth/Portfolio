@@ -6,6 +6,7 @@ import pathHtml from '../../Assets/html.png'
 import pathCss from '../../Assets/css.png'
 import pathJs from '../../Assets/js.png'
 import "./card.css"
+import {delay, motion} from 'framer-motion'
 
 const Card = ({title,image}) => {
     const contexte = "Web technology encompasses the various tools and techniques used to communicate and interact over the internet."
@@ -16,7 +17,11 @@ const Card = ({title,image}) => {
         setIsFlipped(!isFlipped)
     }
     return(
-        <div className="flip-box" onClick={handleClick}>
+        <motion.div className="flip-box" onClick={handleClick}
+            initial = {{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.2, duration: 0.5 } }}
+            viewport={{ once: false, amount: .5 }}
+        >
             <div className={`flip-box-inner ${isFlipped ? 'flipped' : ''}`}>
                 <div className={front}>
                     <div className='flip-box-front-content'>
@@ -31,7 +36,7 @@ const Card = ({title,image}) => {
                     <CardSkill bgColor="#363109" borderColor="#F7DF1E" color="#F7DF1E" bgImage={pathJs} percentage="70%" tech="JavaScript"/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default Card
