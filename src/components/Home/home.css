@@ -31,8 +31,11 @@
 .word-color{
   font-size: 60px;
   font-family: 'Lexend',sans-serif;
-  -webkit-text-stroke: 1px #14FF00;
-  -webkit-text-fill-color: #212121;
+  background-image: url('../Assets//bgtexte.png');
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* -webkit-text-stroke: 1px #14FF00;
+  -webkit-text-fill-color: #212121; */
 }
 .content-home-name .developer{
   font-weight: 400;
