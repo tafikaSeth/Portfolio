@@ -43,7 +43,8 @@ const Home = () => {
                             viewport={{ once: false, amount: .5 }}
                         >
                             <a href="../About">
-                                <span>CONTACT-ME</span>
+                            
+                            .<span>CONTACT-ME</span>
                             </a>
                         </motion.button>
                     </div>

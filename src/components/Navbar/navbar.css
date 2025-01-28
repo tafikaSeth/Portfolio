@@ -224,3 +224,17 @@ html{
     height: 15px;
   }
 }
+@media screen and (max-width: 310px){
+  .navbar{
+    height: 7vh;
+    width: 310px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 300px){
+  .navbar{
+    height: 7vh;
+    width: 300px;
+    margin: 0;
+  }
+}

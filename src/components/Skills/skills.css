@@ -8,7 +8,8 @@
 }
 .content-skills{
     width: 90%;
-    height: 80vh;
+    height: 90%;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: right;

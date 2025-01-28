@@ -110,20 +110,20 @@ const Project = () => {
     return(
         <div id="project" className="container-project">
             <div className="content-project">
-                    <div className="content-project-title">
-                        <motion.h1
-                            initial = {{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
-                            viewport={{ once: false, amount: .5 }}                      
-                        >
-                            My Projects
-                        </motion.h1>
-                        <motion.hr
-                            initial = {{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
-                            viewport={{ once: false, amount: .5 }}
-                        />
-                    </div>
+                <div className="content-project-title">
+                    <motion.h1
+                        initial = {{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                        viewport={{ once: false, amount: .5 }}                      
+                    >
+                        My Projects
+                    </motion.h1>
+                    <motion.hr
+                        initial = {{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                        viewport={{ once: false, amount: .5 }}
+                    />
+                </div>
                 <div className="content-project-myservices">
                     <div className="content-line-round">
                         <Tooltip tooltipText="Web">
