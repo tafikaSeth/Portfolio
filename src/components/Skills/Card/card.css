@@ -177,3 +177,18 @@
     gap: 5px;
   }
 }
+@media screen and (max-width: 320px){
+  .flip-box-front:hover{
+    transform: initial;
+  }
+  .flip-box-front-content h4{
+    font-size: 12px;
+  }
+  .flip-box-front-content p{
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .flip-box-back{
+    gap: 5px;
+  }
+}

@@ -555,3 +555,9 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .container-home{
+    max-width: 100%;
+  }
+}

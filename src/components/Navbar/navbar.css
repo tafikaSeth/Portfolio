@@ -208,12 +208,15 @@ html{
 @media screen and (max-width: 320px) {
   .navbar{
     height: 7vh;
+    width: 320px;
+    margin: 0;
   }
   .navbar .menu{
     margin-left: 10px;
   }
   .navbar-mode{
     margin-right: 10px;
+    
   }
   .navbar-mode img{
     cursor: pointer;

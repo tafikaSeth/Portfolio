@@ -455,8 +455,11 @@
     .content-about-texte h1{
       font-size: 16px;
     }
+    .content-about-texteOne hr{
+      transform: translateY(-7px)!important;
+    }
     .content-about-texte p{
       width: 280px;
-      font-size: 12px;
+      font-size: 10px;
     }
   }

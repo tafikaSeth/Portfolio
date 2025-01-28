@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Menu from "../Assets/icons8-menu-50.png"
 import pathFb from '../Assets/Icons/fb (2).png'
