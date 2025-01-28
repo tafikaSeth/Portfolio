@@ -34,6 +34,7 @@
   background-image: url('../Assets//bgtexte.png');
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   /* -webkit-text-stroke: 1px #14FF00;
   -webkit-text-fill-color: #212121; */
 }
