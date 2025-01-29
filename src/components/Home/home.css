@@ -9,7 +9,6 @@
 .content-home{
   width: 90%;
   height: 90%;
-  /* background-color: red; */
   padding-top: 100px;
   display: flex;
   flex-direction: row;
@@ -314,12 +313,6 @@
     text-align: center;
     margin-top: -15px;
   }
-  .word-color{
-    font-size: 60px;
-    font-family: 'Lexend',sans-serif;
-    -webkit-text-stroke: 1px #14FF00;
-    -webkit-text-fill-color: #212121;
-  }
   .content-home-name .developer{
     font-weight: 400;
     width: 300px;
@@ -387,12 +380,6 @@
     font-family: 'Lexend',sans-serif;
     font-size: 40px;
     text-align: center;
-  }
-  .word-color{
-    font-size: 60px;
-    font-family: 'Lexend',sans-serif;
-    -webkit-text-stroke: 1px #14FF00;
-    -webkit-text-fill-color: #212121;
   }
   .content-home-name .developer{
     font-weight: 400;
@@ -478,9 +465,6 @@
   }
   .word-color{
     font-size: 50px;
-    font-family: 'Lexend',sans-serif;
-    -webkit-text-stroke: 1px #14FF00;
-    -webkit-text-fill-color: #212121;
   }
   .btn-contact{
     transform: translateY(-35px);
@@ -503,9 +487,6 @@
   }
   .word-color{
     font-size: 40px;
-    font-family: 'Lexend',sans-serif;
-    -webkit-text-stroke: 1px #14FF00;
-    -webkit-text-fill-color: #212121;
   }
   .content-home-name .developer{
     font-size: 22px;
@@ -531,9 +512,6 @@
   }
   .word-color{
     font-size: 35px;
-    font-family: 'Lexend',sans-serif;
-    -webkit-text-stroke: 1px #14FF00;
-    -webkit-text-fill-color: #212121;
   }
   .content-home-name .developer{
     font-size: 18px;

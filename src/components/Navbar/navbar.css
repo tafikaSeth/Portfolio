@@ -148,6 +148,7 @@ html{
   }
   .navbar-mode{
     margin-right: 25px;
+    display: none;
   }
   .navbar-mode img{
     width: 25px;
@@ -186,13 +187,12 @@ html{
 }
 @media (min-width: 400px) and (max-width: 499px) {
   .navbar{
-    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
+
 @media screen and (max-width: 399px) {
-  .navbar{
-    height: 8vh;
-  }
   .navbar .menu{
     margin-left: 10px;
   }
@@ -208,8 +208,6 @@ html{
 @media screen and (max-width: 320px) {
   .navbar{
     height: 7vh;
-    width: 320px;
-    margin: 0;
   }
   .navbar .menu{
     margin-left: 10px;
@@ -227,14 +225,25 @@ html{
 @media screen and (max-width: 310px){
   .navbar{
     height: 7vh;
-    width: 310px;
-    margin: 0;
   }
 }
 @media screen and (max-width: 300px){
   .navbar{
     height: 7vh;
-    width: 300px;
-    margin: 0;
+  }
+}
+@media screen and (max-width: 290px){
+  .navbar-mode{
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 282px){
+  .navbar-mode{
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 276px){
+  .navbar-mode{
+    margin-right: 30px;
   }
 }
