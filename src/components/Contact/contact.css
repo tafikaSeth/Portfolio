@@ -321,7 +321,6 @@
         align-items: center;
         gap: 0px;
         transform: translateY(-90px);
-        
     }
     .content-contact-title{
         width: 20%;
@@ -354,7 +353,7 @@
         transform: translate(25%,25%);
     }
     .content-contact-cardTwo{
-        width: 70%;
+        width: 90%;
         height: 90%;
         margin: 0;
     }
@@ -387,15 +386,7 @@
 }
 @media screen and (max-width: 678px) {
     .content-contact-title h1{
-        font-size: 23px;
-    }
-    .content-contact-cardTwo-message input{
-        width: 350px;
-        height: 60%;
-    }
-    #input-message{
-        width: 350px;
-        height: 1000px;
+        font-size: 20px;
     }
     .btnDisable{
         width: 250px!important;
@@ -410,7 +401,7 @@
 @media screen and (max-width: 640px) {
     .container-contact{
         width: 100%;
-        height: 130vh;
+        height: 140vh;
         background: #212121;
     }
     .content-contact{
@@ -426,7 +417,7 @@
         width: 40%;
     }
     .content-contact h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     .content-contact hr{
         width: 60px;
@@ -451,7 +442,7 @@
     }
     .content-contact-cardTwo{
         width: 90%;
-        height: 80%;
+        height: 95%;
         margin: 0;
     }
     .content-contact-cardTwo h4{
@@ -568,7 +559,7 @@
 @media screen and (max-width: 400px) {
     .container-contact{
         width: 100%;
-        height: 100vh;
+        height: 110vh;
         background: #212121;
     }
     .content-contact{
@@ -610,7 +601,7 @@
     }
     .content-contact-cardTwo{
         width: 90%;
-        height: 90%;
+        height: 100%;
         margin: 0;
     }
     .content-contact-cardTwo h4{
@@ -645,9 +636,15 @@
     .content-contact{
         width: 324px;
     }
+    .content-contact-cardOne p{
+        transform: translate(25%,-20px)!important;
+    }
+    .content-contact-cardTwo, .content-contact-title, .content-contact-cardOne h2, h5 {
+        transform: translateY(-20px)!important;
+    }
     .content-contact-cardTwo{
         width: 90%;
-        height: 90%;
+        height: 100%;
     }
     .content-contact-cardTwo-message input{
         width: 100%;

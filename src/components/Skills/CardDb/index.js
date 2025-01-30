@@ -17,9 +17,9 @@ const CardDb = ({title,image}) => {
     }
     return(
         <motion.div className="flip-box" onClick={handleClick}
-            // initial = {{ opacity: 0, scale: 0 }}
-            // whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.5, duration: 0.8 } }}
-            // viewport={{ once: false, amount: .5 }}
+            initial = {{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1, transition: { delay: 0.5, duration: 0.8 } }}
+            viewport={{ once: false, amount: .5 }}
         >
             <div className={`flip-box-inner ${isFlipped ? 'flipped' : ''}`}>
                 <div className={front}>
