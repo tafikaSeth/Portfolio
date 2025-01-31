@@ -272,11 +272,12 @@
 @media screen and (max-width: 768px) {
   .container-home{
     width: 100%;
-    height: 100vh;
+    height: 95vh;
   }
   .content-home{
-    width: 100%;
+    width: 90%;
     height: 100%;
+    transform: translateY(-50px);
     background: #212121;
     margin: 0;
     padding: 0;
@@ -285,14 +286,28 @@
     justify-content: center;
     align-items: center;
     gap: 0px;
+    /* background-color: red; */
   }
   .content-home-image{
-    width: 70%;
-    height: 400px;
-    transform: translateY(5px);
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    transform: translateY(50px);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+  }
+  .content-home-name{
+    width: 100%;
+    height: 50%;
+    background: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    /* background-color: green; */
   }
   .btn-contact a::before {
     content: '';
@@ -305,16 +320,6 @@
     transition: 0.3s ease-in-out;
     transform: scaleY(1);
   }
-  .content-home-name{
-    width: 100%;
-    height: 49%;
-    background: #212121;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-  }
   .content-home-name h1{
     width: 500px;
     height: 50vh;
@@ -322,7 +327,7 @@
     font-family: 'Lexend',sans-serif;
     font-size: 40px;
     text-align: center;
-    margin-top: -15px;
+    transform: translateY(-20px);
   }
   .content-home-name .developer{
     font-weight: 400;
@@ -333,7 +338,7 @@
     font-size: 28px;
   }
   .btn-contact{
-    transform: translateY(-40px);
+    transform: translateY(-20px);
   }
   .btn-contact a {
     position: relative;
@@ -350,37 +355,10 @@
 @media screen and (max-width: 640px){
   .content-home-image{
     width: 50%;
-  }  
-  .btn-contact a:hover::before {
-    transform: scaleY(0);
+    transform: translateY(45px);
   }
-  .btn-contact a::after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: -2px;
-    height: calc(100% + 4px);
-    width: calc(100% - 12px);
-    background-color: #212121;
-    transition: 0.3s ease-in-out;
-    transform: scaleX(1);
-    transition-delay: 0.5s;
-  }
-  .btn-contact a:hover::after {
-    transform: scaleX(0);
-  }
-  .btn-contact a span {
-    position: relative;
-    z-index: 3;
-    font-size: 15px;
-    font-family: 'Lexend',sans-serif;
-  }
-  
-  .btn-contact button {
-    background-color: none;
-    text-decoration: none;
-    background-color: #212121;
-    border: none;
+  .btn-contact{
+    transform: translateY(-20px);
   }
 }
 @media screen and (max-width: 509px) {
@@ -388,16 +366,17 @@
     width: 490px;
   }
   .btn-contact{
-    transform: translateY(-35px);
+    transform: translateY(-25px);
   }
 }
 @media (min-width: 400px) and (max-width: 499px) {
   .content-home-name{
-    height: 40%;
+    height: 50%;
   }
   .content-home-name h1{
     width: 390px;
     font-size: 30px;
+    transform: translateY(0px);
   }
   .content-home-name .developer{
     font-size: 22px;
@@ -405,62 +384,61 @@
 }
 @media (max-width: 399px) {
   .content-home-image{
-    width: 30%;
+    width: 70%;
   }
   .content-home-name{
-    height: 40%;
+    height: 50%;
   }
   .content-home-name h1{
     width: 330px;
-    font-size: 25px;
+    font-size: 40px;
   }
   .word-color{
     font-size: 35px;
   }
   .content-home-name .developer{
-    font-size: 18px;
+    font-size: 23px;
   }
   .btn-contact{
-    transform: translateY(-45px);
+    transform: translateY(-25px);
   }
 }
 @media screen and (max-width: 339px) {
   .content-home-image{
-    transform: translateY(-20px);
+    transform: translateY(40px);
   }
   .content-home-name{
-    height: 35%;
+    height: 50%;
   }
   .content-home-name h1{
     width: 300px;
-    font-size: 25px;
-    transform: translateY(-30px);
+    font-size: 30px;
+    /* transform: translateY(-50px); */
   }
   .content-home-name .developer{
-    font-size: 20px;
+    font-size: 22px;
   }
   .content-home-name .word-color{
     font-size: 30px;
   }
   .btn-contact{
-    transform: translateY(-35px);
+    transform: translateY(-30px);
   }
 }
 
-@media screen and (max-width: 299px){
+@media screen and (min-width: 227px) and (max-width: 299px){
   .content-home-image{
-    transform: translateY(-30px);
+    transform: translateY(35px);
   }
   .content-home-name h1{
     width: 200px;
     font-size: 30px;
-    transform: translateY(-60px);
   }
   .content-home-name .word-color{
     font-size: 20px;
   }
   .btn-contact{
-    transform: translateY(-50px);
+    transform: translateY(-25px);
   }
 }
 @media screen and (max-width: 227px) {
