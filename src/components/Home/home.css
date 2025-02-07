@@ -435,6 +435,7 @@
   .content-home-name h1{
     font-size: 28px;
     width: 190px;
+    display: none;
   }
   .content-home-name .word-color{
     font-size: 30px;
