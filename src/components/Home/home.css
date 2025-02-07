@@ -413,7 +413,6 @@
   .content-home-name h1{
     width: 300px;
     font-size: 30px;
-    /* transform: translateY(-50px); */
   }
   .content-home-name .developer{
     font-size: 22px;
@@ -426,28 +425,31 @@
   }
 }
 
-@media screen and (min-width: 227px) and (max-width: 299px){
+@media screen and (max-width: 299px){
   .content-home-image{
-    transform: translateY(35px);
+    width: 100%;
+  }
+  .content-home-name{
+    width: 100%;
   }
   .content-home-name h1{
-    width: 200px;
-    font-size: 30px;
-    transform: translateY(-35px);
+    font-size: 28px;
+    width: 190px;
   }
   .content-home-name .word-color{
-    font-size: 25px;
-  }
-  .content-home-name .developer{
-    font-size: 16px;
-  }
-  .btn-contact{
-    transform: translateY(-45px);
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 227px) {
+  /* .container-home{
+    height: 100%;
+  }
   .content-home-image{
-    width: 50px!important;
+    transform: translateY(300px)!important;
+  }
+  .content-home{
+    transform: translateY(50px);
+    background-color: red;
   }
   .content-home-name .word-color{
     font-size: 20px;
@@ -458,7 +460,7 @@
   }
   .btn-contact a{
     font-size: 16px;
-  }
+  } */
 }
 @media screen and (max-width: 209px) {
   .content-home-image{
