@@ -326,6 +326,7 @@
     font-family: 'Lexend',sans-serif;
     font-size: 40px;
     text-align: center;
+    -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
   }
   .content-home-name .developer{
@@ -337,6 +338,7 @@
     font-size: 28px;
   }
   .btn-contact{
+    -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
   .btn-contact a {
@@ -354,9 +356,11 @@
 @media screen and (max-width: 640px){
   .content-home-image{
     width: 50%;
+    -webkit-transform: translateY(45px);
     transform: translateY(45px);
   }
   .btn-contact{
+    -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 }
@@ -365,6 +369,7 @@
     width: 490px;
   }
   .btn-contact{
+    -webkit-transform: translateY(-25px);
     transform: translateY(-25px);
   }
 }
@@ -375,6 +380,7 @@
   .content-home-name h1{
     width: 300px;
     font-size: 35px;
+    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
   .content-home-name .developer{
@@ -388,6 +394,7 @@
   .content-home-name h1{
     width: 300px;
     font-size: 35px;
+    -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
   .content-home-name .developer{
@@ -412,12 +419,14 @@
     font-size: 25px;
   }
   .btn-contact{
+    -webkit-transform: translateY(-35px);
     transform: translateY(-35px);
   }
 }
 @media screen and (max-width: 339px) {
   .content-home-image{
-    transform: translateY(30px);
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
   }
   .content-home-name{
     height: 50%;
@@ -425,7 +434,6 @@
   .content-home-name h1{
     width: 200px;
     font-size: 30px;
-    transform: translateY(-45px);
   }
   .content-home-name .developer{
     font-size: 20px;
@@ -434,7 +442,8 @@
     font-size: 30px;
   }
   .btn-contact{
-    transform: translateY(-70px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
 }
 
