@@ -251,7 +251,7 @@
     margin: 0;
   }
   .content-about-image{
-    transform: translateX(0px);
+    transform: translate(0px, -40px);
     width: 90%;
     background-size: contain;
   }
@@ -261,8 +261,14 @@
     flex-direction: row;
     transform: translateY(20px)!important;
   }
+  .content-about-texteOne{
+    transform: translateY(-20px);
+  }
   .button{
     width: 230px;
+  }
+  .content-about-btn{
+    transform: translateY(10px)!important;
   }
   .button .button-icon{
     transform: translateX(185px);
@@ -280,13 +286,15 @@
   }
   .content-about-image{
     height: 60%;
-    transform: translateY(-10px);
+    transform: translateY(-40px);
   }
-
    .content-about-title{
      width: 30%;
      margin: 0;
      transform: translateY(-5px);
+   }
+   .content-about-texteOne{
+    transform: translateY(-20px);
    }
   .content-about-texteOne hr{
     width: 45px;
@@ -314,7 +322,7 @@
     }
     .content-about-image{
       height: 60%;
-      transform: translateY(-10px);
+      transform: translateY(-50px);
     }
     .content-about-title{
       transform: translateY(0px);
@@ -323,7 +331,7 @@
       margin: 0px;
     }
     .content-about-texteOne{
-      transform: translateY(10px);
+      transform: translateY(-20px);
     }
     .content-about-texte h1{
       font-size: 16px;
@@ -332,19 +340,19 @@
       font-size: 12px;
     }
     .content-about-btn{
-      transform: translateY(20px)!important;
+      transform: translateY(10px)!important;
     }
   }
   @media screen and (max-width: 320px) {
     .content-about-image{
       width: 55%!important;
-      transform: translateY(-15px);
+      transform: translateY(-50px);
     }
     .content-about-title{
       margin: 0;
     }
     .content-about-btn{
-      transform: translateY(50px)!important;
+      transform: translateY(60px)!important;
     }
     .button{
       width: 180px;
@@ -359,7 +367,7 @@
       transform: translateY(30px)!important;
     }
     .content-about-texte{
-      transform: translateY(-50px);
+      transform: translateY(-70px);
     }
     .content-about-texte h1{
       font-size: 12px;
