@@ -417,7 +417,7 @@
 }
 @media screen and (max-width: 339px) {
   .content-home-image{
-    transform: translateY(40px);
+    transform: translateY(30px);
   }
   .content-home-name{
     height: 50%;
@@ -425,6 +425,7 @@
   .content-home-name h1{
     width: 200px;
     font-size: 30px;
+    transform: translateY(-45px);
   }
   .content-home-name .developer{
     font-size: 20px;
@@ -433,7 +434,7 @@
     font-size: 30px;
   }
   .btn-contact{
-    transform: translateY(-30px);
+    transform: translateY(-70px);
   }
 }
 
