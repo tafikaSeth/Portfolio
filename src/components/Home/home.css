@@ -423,7 +423,7 @@
     transform: translateY(-35px);
   }
 }
-@media screen and (max-width: 339px) {
+@media (max-width: 339px) {
   .content-home-image{
     -webkit-transform: translateY(40px);
     transform: translateY(40px);
