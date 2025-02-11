@@ -272,7 +272,7 @@
 @media screen and (max-width: 768px) {
   .container-home{
     width: 100%;
-    height: 95vh;
+    height: 100vh;
   }
   .content-home{
     width: 90%;
@@ -286,7 +286,6 @@
     justify-content: center;
     align-items: center;
     gap: 0px;
-    /* background-color: red; */
   }
   .content-home-image{
     margin: 0;
@@ -327,7 +326,7 @@
     font-family: 'Lexend',sans-serif;
     font-size: 40px;
     text-align: center;
-    transform: translateY(-20px);
+    transform: translateY(-5px);
   }
   .content-home-name .developer{
     font-weight: 400;
@@ -369,20 +368,33 @@
     transform: translateY(-25px);
   }
 }
-@media (min-width: 400px) and (max-width: 499px) {
+@media screen and (max-width: 499px) {
   .content-home-name{
     height: 50%;
   }
   .content-home-name h1{
-    width: 390px;
-    font-size: 30px;
-    transform: translateY(0px);
+    width: 300px;
+    font-size: 35px;
+    transform: translateY(-10px);
   }
   .content-home-name .developer{
-    font-size: 22px;
+    font-size: 25px;
   }
 }
-@media (max-width: 399px) {
+@media screen and (max-width: 450px) {
+  .content-home-name{
+   max-height: 50%;
+  }
+  .content-home-name h1{
+    width: 300px;
+    font-size: 35px;
+    transform: translateY(-15px);
+  }
+  .content-home-name .developer{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 399px) {
   .content-home-image{
     width: 70%;
   }
@@ -397,10 +409,10 @@
     font-size: 35px;
   }
   .content-home-name .developer{
-    font-size: 23px;
+    font-size: 25px;
   }
   .btn-contact{
-    transform: translateY(-25px);
+    transform: translateY(-35px);
   }
 }
 @media screen and (max-width: 339px) {
@@ -411,11 +423,11 @@
     height: 50%;
   }
   .content-home-name h1{
-    width: 300px;
+    width: 200px;
     font-size: 30px;
   }
   .content-home-name .developer{
-    font-size: 22px;
+    font-size: 20px;
   }
   .content-home-name .word-color{
     font-size: 30px;
@@ -435,37 +447,9 @@
   .content-home-name h1{
     font-size: 28px;
     width: 190px;
-    display: none;
   }
   .content-home-name .word-color{
     font-size: 30px;
-  }
-}
-@media screen and (max-width: 227px) {
-  /* .container-home{
-    height: 100%;
-  }
-  .content-home-image{
-    transform: translateY(300px)!important;
-  }
-  .content-home{
-    transform: translateY(50px);
-    background-color: red;
-  }
-  .content-home-name .word-color{
-    font-size: 20px;
-  }
-  .content-home-name .developer{
-    letter-spacing: 0px;
-    width: 100px!important;
-  }
-  .btn-contact a{
-    font-size: 16px;
-  } */
-}
-@media screen and (max-width: 209px) {
-  .content-home-image{
-    width: 30px!important;
   }
 }
 @media screen and (max-width: 199px){
