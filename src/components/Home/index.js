@@ -34,6 +34,7 @@ const Home = () => {
     return(
         <div id="home" className="container-home">
             <div className="content-home">
+                <div className="content-home-image"></div>
                 <div className="content-home-name">
                     <h1>Hello,<br/>I'm <span className="word-color">{displayText}</span> <br/><span className="developer">Web Developer & mobile</span></h1>
                     <div className="btn-contact">
@@ -49,7 +50,6 @@ const Home = () => {
                         </motion.button>
                     </div>
                 </div>
-                <div className="content-home-image"></div>
             </div>
         </div>
     )
