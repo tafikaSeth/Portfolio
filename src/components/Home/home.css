@@ -428,7 +428,6 @@
   }
   .content-home-name .developer{
     font-size: 20px;
-    color: red;
   }
   .content-home-name .word-color{
     font-size: 30px;
@@ -451,6 +450,7 @@
   }
   .content-home-name .word-color{
     font-size: 30px;
+    color: red;
   }
 }
 @media screen and (max-width: 199px){
