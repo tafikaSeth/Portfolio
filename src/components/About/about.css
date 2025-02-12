@@ -112,103 +112,165 @@
     border: 1px solid #1d7515;
   }
 
-@media screen and (max-width: 1280px) {
-  .content-about{
-    width: 90%;
-  }
-  .content-about-image{
-    background-size: cover;
-    width: 70%;
-    height: 80vh;
-    transform: translateX(-180px);
-  }
-  .content-about-texte{
-    width: 80%;
-  }
-  .content-about-texte p{
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1254px) {
-  .content-about-image{
-    width: 70%;
-    transform: translateX(-170px);
-  }
-}
-@media screen and (max-width: 1200px) {
-  .content-about-image{
-    width: 70%;
-    transform: translateX(-160px);
-  }
-}
-@media screen and (max-width: 1130px) {
-  .content-about-image{
-    width: 70%;
-    transform: translateX(-150px);
-  }
-}
-@media screen and (max-width: 1080px) {
-  .content-about-image{
-    width: 70%;
-    transform: translateX(-130px);
-  }
-}
-@media screen and (max-width: 1024px) {
+@media (max-width: 768px) {
   .container-about{
     width: 100%;
-    align-items: center;
+    height: 100vh;
   }
   .content-about{
-    width: 90%;
-    height: 92%;
-  }
-  .content-about-image{
-    width: 70%;
-    transform: translateX(-120px);
-    height: 80vh;
-  }
-  .content-about-texte p{
-    font-size: 16px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .content-about-image{
-    width: 70%;
-    transform: translateX(-100px);
-  }
-}
-@media screen and (max-width: 863px) {
-  .content-about{
-    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* background-color: red; */
   }
   .content-about-image{
-    background-size: cover;
-    width: 70%;
-    transform: translateX(-50px);
-  }
-  .content-about-texte p{
-    font-size: 14px;
-    width: 500px;
-  }
-}
-@media screen and (max-width: 845px) {
-  .content-about-image{
-    width: 70%;
-    transform: translateX(-40px);
-  }
-}
-@media screen and (max-width: 820px) {
-  .content-about-image{
-    width: 70%;
-    transform: translateX(-50px);
+    width: 100%;
+    height: 50%;
+    margin-top: 0.8rem;
+    margin-left: 28rem;
   }
   .content-about-texte{
+    width: 90%;
+  }
+  .content-about-texte h1{
+    font-size: 14px;
+  }
+  .content-about-texteOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  .content-about-title{
+      margin: 0;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+  }
+  .content-about-btn{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .button{
+    width: 11.25rem;
+  }
+  .button .button-icon{
+    margin-left: 8.5rem;
+  }
+  .button .button-text{
+    font-size: clamp(0.75rem, 3vw, 0.875rem);
   }
   .content-about-texte p{
-    width: 100%
+    font-size: clamp(0.7rem, 3vw, 0.75rem); /* 10px */
+    text-align: justify;
+    margin: 0;
+  }
+}
+@media (max-width: 425px){
+  .container-about{
+    width: 100%;
+    height: 100vh;
+  }
+  .content-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .content-about-texte{
+    width: 90%;
+    margin: 0;
+  }
+  .content-about-texte h1{
+    font-size: 14px;
+  }
+  .content-about-texteOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+  }
+  .content-about-title{
+      margin: 0;
+  }
+  .content-about-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .button{
+    width: 11.25rem;
+  }
+  .button .button-icon{
+    margin-left: 8.5rem;
+  }
+  .button .button-text{
+    font-size: clamp(0.75rem, 3vw, 0.875rem);
+  }
+  .content-about-texte p{
+    font-size: clamp(0.655rem, 3vw, 0.75rem)!important;
+    text-align: justify;
+    margin: 0;
+  }
+}
+@media (max-width: 375px){
+  .container-about{
+    width: 100%;
+    height: 100vh;
+  }
+  .content-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .content-about-texte{
+    width: 90%;
+  }
+  .content-about-texte h1{
+    font-size: 14px;
+  }
+  .content-about-texteOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .content-about-title{
+      margin: 0;
+  }
+  .content-about-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .button{
+    width: 11.25rem;
+  }
+  .button .button-icon{
+    margin-left: 8.5rem;
+  }
+  .button .button-text{
+    font-size: clamp(0.75rem, 3vw, 0.875rem);
+  }
+  .content-about-texte p{
+    font-size: clamp(0.655rem, 3vw, 0.75rem); /* 10px */
+    text-align: justify;
+    margin: 0;
   }
 }
 @media (max-width: 320px) {
@@ -226,13 +288,8 @@
   }
   .content-about-image{
     width: 55%;
-    height: 40%;
-    margin-top: -3.7rem;
-    margin-left: 5rem;
-  }
-  .content-about-texte{
-    height: 50%;
-    margin-top: 0.2rem;
+    height: 35%!important;
+    margin-top: 1rem;
   }
   .content-about-texte h1{
     font-size: 14px;
@@ -251,25 +308,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    /* margin-top: 2rem; */
   }
-    .button{
-      width: 11.25rem;
-    }
-     .button .button-icon{
-      margin-left: 8.5rem;
-     }
-    .button .button-text{
-      font-size: clamp(0.75rem, 3vw, 0.875rem);
-    }
+  .button{
+    width: 11.25rem;
+  }
+  .button .button-icon{
+    margin-left: 8.5rem;
+  }
+  .button .button-text{
+    font-size: clamp(0.75rem, 3vw, 0.875rem);
+  }
     .content-about-texte p{
-      font-size: clamp(0.655rem, 3vw, 0.75rem); /* 10px */
+      font-size: clamp(0.655rem, 3vw, 0.75rem);
       text-align: justify;
       margin: 0;
+      margin-top: 0.5rem;
     }
-  }
-  @media screen and (max-width: 239px) {
-    .content-about-btn{
-      width: 200px;
-    }
-  }
+}
