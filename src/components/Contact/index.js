@@ -60,53 +60,55 @@ const Contact = () => {
             <div id="contact" className="container-contact">
                 <div className="content-contact">
                     <div className="content-contact-title">
-                        <motion.h1
-                            initial = {{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
-                            viewport={{ once: false, amount: .5 }}
+                        <h1
+                            // initial = {{ opacity: 0, x: -50 }}
+                            // whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            // viewport={{ once: false, amount: .5 }}
                         >
                             Contact Me
-                        </motion.h1>
+                        </h1>
                         <motion.hr
-                            initial = {{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
-                            viewport={{ once: false, amount: .5 }}
+                            // initial = {{ opacity: 0, x: 50 }}
+                            // whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            // viewport={{ once: false, amount: .5 }}
                         />
                     </div>
                     <div className="content-contact-cards">
-                        <motion.div 
+                        <div 
                             className="content-contact-cardOne"
-                            initial = {{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
-                            viewport={{ once: false, amount: .5 }}
+                            // initial = {{ opacity: 0, x: -50 }}
+                            // whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            // viewport={{ once: false, amount: .5 }}
                         >
                             <h2>Let's chat.<br/>Tell me about your project.</h2>
                             <h5>Let's create something together</h5>
                             <p>Number phone: +261384816313</p>
                             <p>Address: Fianarantsoa Madagascar</p>
-                        </motion.div>
-                        <motion.div
+                        </div>
+                        <div
                             className="content-contact-cardTwo"
-                            initial = {{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
-                            viewport={{ once: false, amount: .5 }}
+                            // initial = {{ opacity: 0, x: 50 }}
+                            // whileInView={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            // viewport={{ once: false, amount: .5 }}
                         >
                             <div className="content-contact-cardTwo-message">
                                 <h4>Send me a message</h4>
                                 <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*"  required/>
                                 <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*"  required/>
-                                <label>Your Message</label>
-                                <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message"/>
+                                <div style={{position: 'relative'}} className="for-input">
+                                    <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message" placeholder=" "/>
+                                    <label id="lab">Tape your message</label>
+                                </div>
                                 {/* <div className="recaptcha-container">
                                     <ReCAPTCHA
                                     ref={captcha}
                                     sitekey='6LcOs5wpAAAAAGyqC807hfWT1VBLa-qaE1HaO0PF'
                                     onChange={handleRecap}
                                     />
-                                </div>   */}
+                                    </div>   */}
                                 <button className="btnActive" type="submit">Send message</button>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>
