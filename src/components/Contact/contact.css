@@ -312,7 +312,7 @@
     }
 
     .content-contact-cardTwo {
-        width: 90%; /* Ajusté pour mieux remplir l'espace */
+        width: 90%;
         height: 70%;
         margin-top: 1rem;
     }
@@ -334,7 +334,7 @@
     }
 
     .btnActive {
-        width: 50%; /* Remplace la valeur fixe pour mieux s'adapter */
-        max-width: 9.374rem; /* Pour éviter qu'il devienne trop grand */
+        width: 50%;
+        max-width: 9.374rem;
     }
 }
