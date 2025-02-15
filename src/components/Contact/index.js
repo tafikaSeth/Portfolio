@@ -92,7 +92,7 @@ const Contact = () => {
                             // viewport={{ once: false, amount: .5 }}
                         >
                             <div className="content-contact-cardTwo-message">
-                                <h4>Send me a message</h4>
+                                <h4>Send me your message</h4>
                                 <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*"  required/>
                                 <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*"  required/>
                                 <div style={{position: 'relative'}} className="for-input">
