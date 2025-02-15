@@ -292,7 +292,7 @@
     }
 
     .container-contact h1 {
-        font-size: clamp(1rem, 5vw, 1.5rem);
+        font-size: clamp(1rem, 5vw, 1.5rem)!important;
     }
 
     .content-contact-title {
@@ -304,13 +304,13 @@
     }
 
     .content-contact-cardOne p {
-        font-size: clamp(0.75rem, 4vw, 1rem);
+        font-size: clamp(0.75rem, 4vw, 1rem)!important;
     }
 
     .content-contact-cardTwo {
         width: 90%;
-        height: 40%;
-        margin-top: 0rem;
+        height: 50%!important;
+        margin-top: 1rem!important;
     }
 
     .content-contact-cardTwo-message input {
