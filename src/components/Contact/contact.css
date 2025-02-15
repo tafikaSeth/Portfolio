@@ -294,7 +294,7 @@
         width: 100%;
     }
     .container-contact h1{
-        font-size: 16px;
+        font-size: clamp(1rem, 5vw, 1.5rem);
     }
     .content-contact-title{
         margin-top: -0.3rem;
@@ -303,7 +303,7 @@
         margin-top: 0.5rem;
     }
     .content-contact-cardOne p {
-        font-size: 12px;
+        font-size: clamp(0.75rem, 4vw, 1rem);
     }
     .content-contact-cardTwo {
         width: 80%;
