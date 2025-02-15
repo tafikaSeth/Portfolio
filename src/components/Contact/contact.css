@@ -150,7 +150,7 @@
         align-items: center;
     }
     .content-contact h1{
-        font-size: clamp(1em, 3vw, 1.5em);
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
     }
     .content-contact hr{
         width: 60px;
@@ -164,18 +164,18 @@
         text-align: center;
     }
     .content-contact-cardOne h2{
-        font-size: clamp(0.875em, 2.5vw, 1.25em);
+        font-size: clamp(0.15em, 2vw, 1em);
         width: 100%;
     }
     .content-contact-cardOne h5{
-        font-size: clamp(0.75em, 2vw, 1em);
+        font-size: clamp(0.15em, 2vw, 1em);
     }
     .content-contact-cardOne p{
-        font-size: clamp(0.625em, 1.8vw, 0.875em);
+        font-size: 10px;
     }
     .content-contact-cardTwo{
         width: 90%;
-        height: 70%;
+        height: 65%;
         margin: 0;
     }
     .content-contact-cardTwo h4{
