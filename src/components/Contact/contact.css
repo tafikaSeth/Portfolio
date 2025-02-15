@@ -133,7 +133,6 @@
     .content-contact{
         display: flex;
         justify-content: center;
-        /* background-color: blue; */
         width: 100%;
         gap: 0px;
 
@@ -141,19 +140,17 @@
     .content-contact-cards{
         flex-direction: column;
         width: 100%;
-        /* background-color: red; */
     }
     .content-contact-title{
         width: 100%;
         height: 30px;
-        /* background-color: brown; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .content-contact h1{
-        font-size: 16px;
+        font-size: clamp(1em, 3vw, 1.5em);
     }
     .content-contact hr{
         width: 60px;
@@ -163,19 +160,18 @@
     .content-contact-cardOne{
         width: 100%;
         height: 140px;
-        /* background-color: black; */
         margin: 0;
         text-align: center;
     }
     .content-contact-cardOne h2{
-        font-size: 14px;
+        font-size: clamp(0.875em, 2.5vw, 1.25em);
         width: 100%;
     }
     .content-contact-cardOne h5{
-        font-size: 12px;
+        font-size: clamp(0.75em, 2vw, 1em);
     }
     .content-contact-cardOne p{
-        font-size: 10px;
+        font-size: clamp(0.625em, 1.8vw, 0.875em);
     }
     .content-contact-cardTwo{
         width: 90%;
