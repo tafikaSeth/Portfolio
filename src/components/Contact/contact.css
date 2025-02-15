@@ -290,42 +290,51 @@
         width: 100%;
         overflow-x: hidden;
     }
+
     .content-contact {
         width: 100%;
     }
-    .container-contact h1{
+
+    .container-contact h1 {
         font-size: clamp(1rem, 5vw, 1.5rem);
     }
-    .content-contact-title{
+
+    .content-contact-title {
         margin-top: -0.3rem;
     }
-    .content-contact-cardOne{
+
+    .content-contact-cardOne {
         margin-top: 0.5rem;
     }
+
     .content-contact-cardOne p {
         font-size: clamp(0.75rem, 4vw, 1rem);
     }
+
     .content-contact-cardTwo {
-        width: 80%;
-        height: 70%!important;
+        width: 90%; /* Ajusté pour mieux remplir l'espace */
+        height: 70%;
         margin-top: 1rem;
     }
+
     .content-contact-cardTwo-message input {
         width: 100%;
         height: 3rem;
     }
+
     .for-input {
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
     #input-message {
         width: 100%;
         height: 4.375rem;
     }
-    .btnActive {
-        width: 9.374rem !important;
-    }
-    
 
+    .btnActive {
+        width: 50%; /* Remplace la valeur fixe pour mieux s'adapter */
+        max-width: 9.374rem; /* Pour éviter qu'il devienne trop grand */
+    }
 }
