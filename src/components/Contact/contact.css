@@ -155,7 +155,7 @@
     .content-contact hr{
         width: 60px;
         border: 1px solid #14FF00;
-        margin: 0.2rem 0rem 0rem -1.5rem;
+        margin: 0.5rem 0rem 0rem -1rem;
     }
     .content-contact-cardOne{
         width: 100%;
@@ -164,11 +164,11 @@
         text-align: center;
     }
     .content-contact-cardOne h2{
-        font-size: clamp(0.15em, 2vw, 1em);
+        font-size: clamp(0.15em, 4vw, 1em);
         width: 100%;
     }
     .content-contact-cardOne h5{
-        font-size: clamp(0.15em, 2vw, 1em);
+        font-size: clamp(0.15em, 4vw, 1em);
     }
     .content-contact-cardOne p{
         font-size: 10px;
@@ -292,7 +292,7 @@
     }
 
     .container-contact h1 {
-        font-size: clamp(1.25rem, 5vw, 1.5rem)!important;
+        font-size: clamp(0.85rem, 4vw, 1rem)!important;
     }
 
     .content-contact-title {

@@ -15,9 +15,10 @@ import bgEnjoyB from '../Assets/enjoyB.jpg'
 import bgMobile from '../Assets/mobilegeo.jpg'
 import bgWebDesign from '../Assets/webDesign.png'
 import bgChat from '../Assets/chat.png'
+import bgGearator from '../Assets/mobileGen.jpg'
 import CardWeb from "./CardWeb";
 import Tooltip from "./Tooltip";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Project = () => {
     const paragraphPortfolio = "Creation of my portfolio to show you what i'm capable in web development"
@@ -37,6 +38,9 @@ const Project = () => {
     const outilsChat = "Techno: Python,Ampalibe,API chatGPT"
     const urlChat = "https://github.com/tafikaSeth/Paris_sportif.git"
     const paragraphChat = "Creation of a sports betting messenger chatbot and chatGPT-turbo integration"
+    const paragraphGenerator = "Mobile application for generate and scan a qr code simply"
+    const outilsGenerator = "Techno: React native, Expo, Eas build"
+    const urlGenarator = 'https://expo.dev/accounts/sethtafika/projects/genarate/builds/64550660-bf47-4c20-beb3-4eb91c2cd6e8'
     
     const [isDisp,setIsDisp] = useState(true)
     const [roundSelected,setRoundSelected] = useState('round-first')
@@ -151,7 +155,7 @@ const Project = () => {
                                 className = 'mySwiper'
                                 spaceBetween={20}
                                 slidesPerView={windowWidth<=768 ? 1 : 3}
-                                >
+                            >
                                 <SwiperSlide>
                                     <CardWeb backround={bgPortfolio} projectName='MY PORTFOLIO' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
                                 </SwiperSlide>
@@ -170,7 +174,18 @@ const Project = () => {
                             initial = {{ opacity: 1, y: 50 }}
                             whileInView = {{ opacity: 1, y: 0, transtion:{ duration: 0.2 } }}
                         >
-                            <CardWeb backround={bgMobile} projectName='Geolocalisation' urlButton='#videoCalling' paragraph={paragraphMobile} outils={outilsMobile}/>
+                            <Swiper
+                                className = 'mySwiper'
+                                spaceBetween={0.5}
+                                slidesPerView={windowWidth<=768 ? 1 : 2}
+                            >
+                                <SwiperSlide>
+                                    <CardWeb backround={bgMobile} projectName='Geolocalisation' urlButton='#videoCalling' paragraph={paragraphMobile} outils={outilsMobile}/>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <CardWeb backround={bgGearator} projectName='Generator' urlButton={urlGenarator} paragraph={paragraphGenerator} outils={outilsGenerator}/>
+                                </SwiperSlide>
+                            </Swiper>
                         </motion.div>
                         <motion.div id="design" className="content-projects-for-card-design" style={{display:displayCardDesign}}
                             initial = {{ opacity: 1, y: 50 }}

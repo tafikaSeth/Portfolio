@@ -19,14 +19,14 @@ const Navbar = () => {
     return(
         <nav className="navbar">
                 <div id="myNav" className="overlay">
-                <a className="closebtn" onClick={closeMenuMobile}>&times;</a>
-                <div className="overlay-content">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#project">Projects</a>
-                    <a href="#skill">Skills</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                    <a className="closebtn" onClick={closeMenuMobile}>&times;</a>
+                    <div className="overlay-content">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#project">Projects</a>
+                        <a href="#skill">Skills</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </div>
             <div className="navbar-logo">SETH</div>
             <img onClick={openMenuMobile} className="menu" src={Menu}/>
