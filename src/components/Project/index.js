@@ -176,7 +176,7 @@ const Project = () => {
                         >
                             <Swiper
                                 className = 'mySwiper'
-                                spaceBetween={0.5}
+                                spaceBetween={25}
                                 slidesPerView={windowWidth<=768 ? 1 : 2}
                             >
                                 <SwiperSlide>
