@@ -37,7 +37,7 @@ const Contact = () => {
                 from_name:formData.userEmail,
                 to_name:formData.userName,
                 message:formData.message,
-                reply_to:"reply",
+                // reply_to:"reply",
             },
             'yxVYn5pWjbDw-PolF'      // Replace with your EmailJS user ID
           ).then((result) => {
