@@ -82,8 +82,8 @@ const Contact = () => {
                         >
                             <div className="content-contact-cardTwo-message">
                                 <h4>Send me your message</h4>
-                                <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*"  required/>
-                                <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*"  required/>
+                                <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*" aria-label="username"  required/>
+                                <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*" aria-label="email" required/>
                                 <div style={{position: 'relative'}} className="for-input">
                                     <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message" placeholder=" "/>
                                     <label id="lab">Tape your message</label>
