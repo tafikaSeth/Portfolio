@@ -4,17 +4,7 @@ import emailjs from "emailjs-com"
 import { motion } from "framer-motion";
 
 const Contact = () => {
-    // const [isRecaptchaChecked, setRecaptchaChecked] = useState(false);
-    // const captcha = useRef(null)
     const inputValue = useRef(null)
-  
-    // const handleRecap=(value)=>{
-    //   console.log(captcha.current.getValue());
-    //   if(captcha.current.getValue()){
-    //     setRecaptchaChecked(!!value);
-    //   }
-
-    // }
 
     const[formData, setFormData] = useState({
         userName:'',
@@ -31,15 +21,14 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         emailjs.send(
-            'service_8haw6rm',  // Replace with your EmailJS service ID
-            'template_seth_2323', // Replace with your EmailJS template ID
+            'service_8haw6rm',  
+            'template_seth_2323',
             {
                 from_name:formData.userEmail,
                 to_name:formData.userName,
                 message:formData.message,
-                // reply_to:"reply",
             },
-            'yxVYn5pWjbDw-PolF'      // Replace with your EmailJS user ID
+            'yxVYn5pWjbDw-PolF' 
           ).then((result) => {
             console.log(result.text);
             alert('Email sent successfully!');
@@ -99,13 +88,6 @@ const Contact = () => {
                                     <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message" placeholder=" "/>
                                     <label id="lab">Tape your message</label>
                                 </div>
-                                {/* <div className="recaptcha-container">
-                                    <ReCAPTCHA
-                                    ref={captcha}
-                                    sitekey='6LcOs5wpAAAAAGyqC807hfWT1VBLa-qaE1HaO0PF'
-                                    onChange={handleRecap}
-                                    />
-                                    </div>   */}
                                 <button className="btnActive" type="submit">Send message</button>
                             </div>
                         </motion.div>
