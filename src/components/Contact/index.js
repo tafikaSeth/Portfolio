@@ -82,13 +82,13 @@ const Contact = () => {
                         >
                             <div className="content-contact-cardTwo-message">
                                 <h4>Send me your message</h4>
-                                    <label id="username">Username</label>
+                                    <label htmlFor="username">Username</label>
                                 <input type="text" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*" aria-label="username"  required/>
-                                    <label id="email">Email</label>
+                                    <label htmlForfor="email">Email</label>
                                 <input type="email" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*" aria-label="email" required/>
                                 <div style={{position: 'relative'}} className="for-input">
                                     <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message" placeholder=" "/>
-                                    <label id="lab">Tape your message</label>
+                                    <label htmlFor="message" id="lab">Tape your message</label>
                                 </div>
                                 <button className="btnActive" type="submit">Send message</button>
                             </div>

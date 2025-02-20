@@ -101,13 +101,13 @@
     border-radius: 5px;
     cursor: pointer;
 }
-#username, #email{
+.content-contact-cardTwo-message label{
     color: #fff;
     text-align: left;
     font-size: 12px;
     display: flex;
 }
-#lab{
+.content-contact-cardTwo-message #lab{
     color: #797373;
     font-weight: 400;
     position: absolute;
@@ -206,7 +206,7 @@
     #input-message{
         width: 100%;
     }
-    #username, #email{
+    .content-contact-cardTwo-message label{
         display: none;
     }
     .btnActive{
