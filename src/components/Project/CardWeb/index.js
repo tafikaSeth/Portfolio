@@ -7,7 +7,7 @@ const CardWeb = ({backround,projectName,paragraph,outils,urlButton}) => {
             <div className='content-cardweb'>
                 <div className='content-cardweb-image' style={{backgroundImage:`url(${backround})`}}></div>
                 <div className='content-cardweb-texte'>
-                    <h4>{projectName}</h4>
+                    <h2>{projectName}</h2>
                     <p>{paragraph}</p>
                     <p>{outils}</p>
                     {/* <div className='btnCardWeb'>

@@ -22,7 +22,7 @@
   height: 50%;
 
 }
-.content-cardweb-texte h4{
+.content-cardweb-texte h2{
   font-family: 'Lexend',sans-serif;
   color: #fff;
   text-align: center;
@@ -128,7 +128,7 @@
       width: 90%;
       height: 40vh;
     }
-    .content-cardweb-texte h4{
+    .content-cardweb-texte h2{
       font-size: 16px;
       font-weight: bold;
     }
@@ -174,7 +174,7 @@
     width: 90%;
     height: 40vh;
   }
-  .content-cardweb-texte h4{
+  .content-cardweb-texte h2{
     font-size: 16px;
     font-weight: bold;
   }
@@ -201,7 +201,7 @@
     width: 90%;
     height: 40vh;
   }
-  .content-cardweb-texte h4{
+  .content-cardweb-texte h2{
     font-size: 16px;
     font-weight: bold;
   }
@@ -287,7 +287,7 @@
       width: 90%;
       height: 40vh;
     }
-    .content-cardweb-texte h4{
+    .content-cardweb-texte h2{
       font-size: 16px;
       font-weight: bold;
 
@@ -326,7 +326,7 @@
     width: 90%;
     height: 40vh;
   }
-  .content-cardweb-texte h4{
+  .content-cardweb-texte h2{
     font-size: 16px;
     font-weight: bold;
   }
@@ -363,7 +363,7 @@
     width: 90%;
     height: 40vh;
   }
-  .content-cardweb-texte h4{
+  .content-cardweb-texte h2{
     font-size: 14px;
     font-weight: bold;
   }
@@ -401,7 +401,7 @@
     width: 90%;
     height: 40vh;
   }
-  .content-cardweb-texte h4{
+  .content-cardweb-texte h2{
     font-size: 14px;
     font-weight: bold;
   }
@@ -432,7 +432,7 @@
   .content-cardweb-image{
     background-size: cover;
   }
-  .content-cardweb-texte h4{
+  .content-cardweb-texte h2{
     width: 260px;
     font-size: 14px;
     text-align: center;
@@ -458,7 +458,7 @@
   .container-cardweb, .content-cardweb, .content-cardweb-image {
     width: 250px;
   }
-  .content-cardweb-texte h4{
+  .content-cardweb-texte h2{
     width: 230px;
     text-align: center;
     font-size: 14px;
@@ -494,7 +494,7 @@
   .container-cardweb, .content-cardweb, .content-cardweb-image {
     width: 200px;
   }
-  .content-cardweb-texte h4{
+  .content-cardweb-texte h2{
     font-size: 12px;
     width: 180px;
   }
