@@ -54,7 +54,7 @@
 .btn-contact a {
   position: relative;
   display: inline-block;
-  padding: 25px 50px;
+  padding: 8px 16px;
   border: 2px solid #14FF00;
   text-transform: uppercase;
   color: #fff;
@@ -99,7 +99,7 @@
 .btn-contact a span {
   position: relative;
   z-index: 1;
-  font-size: 18px;
+  font-size: 12px;
   font-family: 'Lexend',sans-serif;
 }
 
