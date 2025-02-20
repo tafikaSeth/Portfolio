@@ -43,14 +43,12 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  /* -webkit-text-stroke: 1px #14FF00;
-  -webkit-text-fill-color: #212121; */
 }
 .content-home-name .developer{
   font-weight: 400;
   font-size: 32px;
   font-family: 'Lexend',sans-serif;
-  color: rgb(102, 100, 100);
+  color: #fff;
   letter-spacing: 2px;
 }
 .btn-contact a {
