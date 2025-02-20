@@ -70,7 +70,7 @@ const Contact = () => {
                             viewport={{ once: false, amount: .5 }}
                         >
                             <h2>Let's chat.<br/>Tell me about your project.</h2>
-                            <h4>Let's create something together</h4>
+                            <h3>Let's create something together</h3>
                             <p>Number phone: +261384816313</p>
                             <p>Address: Fianarantsoa Madagascar</p>
                         </motion.div>
@@ -81,7 +81,7 @@ const Contact = () => {
                             viewport={{ once: false, amount: .5 }}
                         >
                             <div className="content-contact-cardTwo-message">
-                                <h4>Send me your message</h4>
+                                <h3>Send me your message</h3>
                                     <label for="userName">Username</label>
                                         <input type="text" id="userName" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*" aria-label="username"  required/>
                                     <label for="userEmail">Email</label>

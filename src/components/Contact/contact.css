@@ -47,7 +47,7 @@
     color: #fff;
     font-family: 'Lexend',sans-serif;
 }
-.content-contact-cardOne h4{
+.content-contact-cardOne h3{
     font-family: 'Lexend',sans-serif;
     font-weight: 300;
     color: #fff;
@@ -69,7 +69,7 @@
     align-items: center;
     margin-right: 50px;
 }
-.content-contact-cardTwo h4{
+.content-contact-cardTwo h3{
     width: 300px;
     font-weight: 400;
     color: #fff;
@@ -173,7 +173,7 @@
         font-size: clamp(0.15em, 4vw, 1em);
         width: 100%;
     }
-    .content-contact-cardOne h4{
+    .content-contact-cardOne h3{
         font-size: clamp(0.15em, 4vw, 1em);
     }
     .content-contact-cardOne p{
@@ -184,7 +184,7 @@
         height: 65%;
         margin: 0;
     }
-    .content-contact-cardTwo h4{
+    .content-contact-cardTwo h3{
         width: 280px;
         text-align: center;
     }
