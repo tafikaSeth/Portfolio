@@ -42,6 +42,7 @@ const Home = () => {
                             initial = {{ scale: 0 }}
                             whileInView={{ opacity:1, scale: 1, transition: {delay: 0.2, duration: 0.5} }}  
                             viewport={{ once: false, amount: .5 }}
+                            style={{marginLeft: '10px'}}
                         >
                             <a href="../About">
                             

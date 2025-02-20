@@ -98,8 +98,8 @@
 
 .btn-contact a span {
   position: relative;
-  z-index: 3;
-  font-size: 18px;
+  z-index: 1;
+  font-size: 24px;
   font-family: 'Lexend',sans-serif;
 }
 
