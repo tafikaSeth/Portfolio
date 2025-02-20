@@ -102,7 +102,10 @@
     cursor: pointer;
 }
 #username, #email{
-    display: none;
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+    display: flex;
 }
 #lab{
     color: #797373;
@@ -202,6 +205,9 @@
     }
     #input-message{
         width: 100%;
+    }
+    #username, #email{
+        display: none;
     }
     .btnActive{
         width: 300px;
