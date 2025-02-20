@@ -70,7 +70,7 @@ const Contact = () => {
                             viewport={{ once: false, amount: .5 }}
                         >
                             <h2>Let's chat.<br/>Tell me about your project.</h2>
-                            <h5>Let's create something together</h5>
+                            <h4>Let's create something together</h4>
                             <p>Number phone: +261384816313</p>
                             <p>Address: Fianarantsoa Madagascar</p>
                         </motion.div>

@@ -50,7 +50,7 @@
     height: 50px;
     margin-top: 15px;
   }
-  .flip-box-front-content h4{
+  .flip-box-front-content h2{
     font-family: 'Lexend',sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -59,7 +59,7 @@
     font-family: 'Lexend',sans-serif;
     font-size: 14px;
     font-weight: 200;
-    margin-top: -10px;
+    margin-top: -5px;
     text-align: justify;
     color: rgb(102, 100, 100);
   }
@@ -150,7 +150,7 @@
   .flip-box{
     width: 100%;
   }
-  .flip-box-front-content h4{
+  .flip-box-front-content h2{
     font-size: 16px;
   }
   .flip-box-front-content p{
@@ -166,7 +166,7 @@
   .flip-box-front:hover{
     transform: initial;
   }
-  .flip-box-front-content h4{
+  .flip-box-front-content h2{
     font-size: 14px;
   }
   .flip-box-front-content p{
@@ -181,7 +181,7 @@
   .flip-box-front:hover{
     transform: initial;
   }
-  .flip-box-front-content h4{
+  .flip-box-front-content h2{
     font-size: 12px;
   }
   .flip-box-front-content p{

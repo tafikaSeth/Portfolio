@@ -26,7 +26,7 @@ const CardLangage = ({title,image}) => {
                 <div className={front}>
                     <div className='flip-box-front-content'>
                         <img src={image} alt={title}/>
-                        <h4>{title}</h4>
+                        <h2>{title}</h2>
                         <p>{contexte}</p>
                     </div>
                 </div>
