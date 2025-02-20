@@ -5,7 +5,7 @@ import Menu from "../Assets/Icons/menu.webp"
 import pathFb from '../Assets/Icons/fb (2).webp'
 import pathApp from '../Assets/Icons/app.webp'
 import pathIn from '../Assets/Icons/in.webp'
-import "./navbar.css"
+import "./navbar.css" 
 
 const Navbar = () => {
 

@@ -2,6 +2,7 @@ import React from "react"
 import { useState,useEffect } from "react"
 import "./home.css"
 import { motion } from "framer-motion"
+import Ribbons from "../Animation"
 
 const Home = () => {
     const [displayText, setDisplayText] = useState('');
@@ -33,6 +34,14 @@ const Home = () => {
     
     return(
         <div id="home" className="container-home">
+                <Ribbons
+                    baseThickness={30}
+                    colors={['#14FF00']}
+                    speedMultiplier={0.5}
+                    maxAge={500}
+                    enableFade={false}
+                    enableShaderEffect={true}
+                />
             <div className="content-home">
                 <div className="content-home-image"></div>
                 <div className="content-home-name">

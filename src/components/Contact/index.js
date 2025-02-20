@@ -2,6 +2,8 @@ import React, { useState,useRef } from "react";
 import "./contact.css"
 import emailjs from "emailjs-com" 
 import { motion } from "framer-motion";
+import Ribbons from "../Animation"
+
 
 const Contact = () => {
     const inputValue = useRef(null)
@@ -47,6 +49,14 @@ const Contact = () => {
     return(
         <form onSubmit={handleSubmit}>
             <div id="contact" className="container-contact">
+                <Ribbons
+                    baseThickness={30}
+                    colors={['#14FF00']}
+                    speedMultiplier={0.5}
+                    maxAge={500}
+                    enableFade={false}
+                    enableShaderEffect={true}
+                />
                 <div className="content-contact">
                     <div className="content-contact-title">
                         <motion.h1

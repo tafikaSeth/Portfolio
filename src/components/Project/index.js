@@ -18,6 +18,7 @@ import bgChat from '../Assets/chat.webp'
 import bgGearator from '../Assets/mobileGen.webp'
 import CardWeb from "./CardWeb";
 import Tooltip from "./Tooltip";
+import Ribbons from "../Animation"
 import { motion } from "framer-motion";
 
 const Project = () => {
@@ -113,6 +114,14 @@ const Project = () => {
     },[roundSelected,windowWidth])
     return(
         <div id="project" className="container-project">
+            <Ribbons
+                baseThickness={30}
+                colors={['#14FF00']}
+                speedMultiplier={0.5}
+                maxAge={500}
+                enableFade={false}
+                enableShaderEffect={true}
+            />
             <div className="content-project">
                 <div className="content-project-title">
                     <motion.h1

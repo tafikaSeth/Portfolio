@@ -52,6 +52,7 @@
   letter-spacing: 2px;
 }
 .btn-contact a {
+  z-index: 10;
   position: relative;
   display: inline-block;
   padding: 8px 16px;

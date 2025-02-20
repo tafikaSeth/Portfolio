@@ -2,11 +2,20 @@ import React from "react"
 import iconDowload from '../Assets/Icons/download.webp'
 import "./about.css"
 import {motion} from 'framer-motion'
+import Ribbons from "../Animation"
 
 const About = () => {
     const cv = require('../Assets/files/Seth.pdf')
     return(
         <div id="about" className="container-about">
+            <Ribbons
+                baseThickness={30}
+                colors={['#14FF00']}
+                speedMultiplier={0.5}
+                maxAge={500}
+                enableFade={false}
+                enableShaderEffect={true}
+            />
             <div className="content-about">
                 <div className="content-about-image"></div>
                 <div className="content-about-texte">

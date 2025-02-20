@@ -4,6 +4,7 @@
     height: 30vh;
     perspective: 1000px;
     font-family: 'Lexend',sans-serif;
+    z-index: 20;
   }
   
   /* This container is needed to position the front and back side */

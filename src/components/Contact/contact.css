@@ -76,6 +76,7 @@
     font-family: 'Lexend',sans-serif;
 }
 .content-contact-cardTwo-message{
+    z-index: 20;
     position: relative;
     width: 90%;
     height: 90%;

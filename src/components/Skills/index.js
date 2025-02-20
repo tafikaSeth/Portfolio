@@ -13,10 +13,19 @@ import iconGit from '../Assets/Icons/versioning.webp'
 import iconTools from '../Assets/Icons/tools.webp'
 import "./skills.css"
 import { motion } from "framer-motion";
+import Ribbons from "../Animation"
 
 const Skills = () => {
     return(
         <div id="skill" className="container-skills">
+                <Ribbons
+                    baseThickness={30}
+                    colors={['#14FF00']}
+                    speedMultiplier={0.5}
+                    maxAge={500}
+                    enableFade={false}
+                    enableShaderEffect={true}
+                />
             <div className="content-skills">
                 <div className="content-skills-title">
                     <motion.h1
