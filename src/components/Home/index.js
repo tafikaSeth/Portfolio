@@ -45,7 +45,7 @@ const Home = () => {
                         >
                             <a href="../About">
                             
-                            .<span>CONTACT-ME</span>
+                            <span>CONTACT-ME</span>
                             </a>
                         </motion.button>
                     </div>

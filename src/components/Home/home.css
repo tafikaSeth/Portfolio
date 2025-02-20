@@ -54,13 +54,13 @@
 .btn-contact a {
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 18px 35px;
   border: 2px solid #14FF00;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .btn-contact a::before {
@@ -99,7 +99,7 @@
 .btn-contact a span {
   position: relative;
   z-index: 3;
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Lexend',sans-serif;
 }
 
