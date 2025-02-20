@@ -2,8 +2,8 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
-import pathGit from '../../Assets/github.png'
-import pathGitLab from '../../Assets/gitlab.png'
+import pathGit from '../../Assets/github.webp'
+import pathGitLab from '../../Assets/gitlab.webp'
 import "../Card/card.css"
 import {motion} from 'framer-motion'
 

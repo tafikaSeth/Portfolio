@@ -5,12 +5,12 @@ import CardDb from "./CardDb";
 import CardFramework from "./CardFramework";
 import CardLangage from "./CardLangage";
 import CardVersioning from "./CardVersioning";
-import iconWeb from '../Assets/Icons/techWeb.png'
-import iconLangage from '../Assets/Icons/langage.png'
-import iconFramework from '../Assets/Icons/framework.png'
-import iconDb from '../Assets/Icons/database.png'
-import iconGit from '../Assets/Icons/versioning.png'
-import iconTools from '../Assets/Icons/tools.png'
+import iconWeb from '../Assets/Icons/techWeb.webp'
+import iconLangage from '../Assets/Icons/langage.webp'
+import iconFramework from '../Assets/Icons/framework.webp'
+import iconDb from '../Assets/Icons/database.webp'
+import iconGit from '../Assets/Icons/versioning.webp'
+import iconTools from '../Assets/Icons/tools.webp'
 import "./skills.css"
 import { motion } from "framer-motion";
 

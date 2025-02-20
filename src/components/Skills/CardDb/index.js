@@ -2,8 +2,8 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
-import pathMysql from '../../Assets/mysql.png'
-import pathPosteGre from '../../Assets/postgresqsl.png'
+import pathMysql from '../../Assets/mysql.webp'
+import pathPosteGre from '../../Assets/postgresqsl.webp'
 import "../Card/card.css"
 import { motion } from 'framer-motion'
 

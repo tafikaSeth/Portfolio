@@ -2,9 +2,9 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
-import pathPs from '../../Assets/fig.png'
-import pathFigma from '../../Assets/fig.png'
-import pathAi from '../../Assets/ail.png'
+import pathPs from '../../Assets/ps.webp'
+import pathFigma from '../../Assets/fig.webp'
+import pathAi from '../../Assets/ail.webp'
 import "../Card/card.css"
 import { motion } from 'framer-motion'
 

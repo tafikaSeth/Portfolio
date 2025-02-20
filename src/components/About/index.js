@@ -1,5 +1,5 @@
 import React from "react"
-import iconDowload from '../Assets/Icons/download.png'
+import iconDowload from '../Assets/Icons/download.webp'
 import "./about.css"
 import {motion} from 'framer-motion'
 

@@ -8,14 +8,14 @@ import 'swiper/css'
 import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 import "./project.css"
-import bgPortfolio from '../Assets/home.png'
-import bgMikrea from '../Assets/mikrea.png'
-import bgVideoCalling from '../Assets/videoCall.jpg'
-import bgEnjoyB from '../Assets/enjoyB.jpg'
-import bgMobile from '../Assets/mobilegeo.jpg'
-import bgWebDesign from '../Assets/webDesign.png'
-import bgChat from '../Assets/chat.png'
-import bgGearator from '../Assets/mobileGen.jpg'
+import bgPortfolio from '../Assets/home.webp'
+import bgMikrea from '../Assets/mikrea.webp'
+import bgVideoCalling from '../Assets/videoCall.webp'
+import bgEnjoyB from '../Assets/enjoyB.webp'
+import bgMobile from '../Assets/mobilegeo.webp'
+import bgWebDesign from '../Assets/webDesign.webp'
+import bgChat from '../Assets/chat.webp'
+import bgGearator from '../Assets/mobileGen.webp'
 import CardWeb from "./CardWeb";
 import Tooltip from "./Tooltip";
 import { motion } from "framer-motion";

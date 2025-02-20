@@ -18,7 +18,7 @@
 .content-home-image{
   width: 45%;
   height: 100vh;
-  background-image: url('../Assets/bg1.jpg');
+  background-image: url('../Assets/bg1.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -39,7 +39,7 @@
 .word-color{
   font-size: 60px;
   font-family: 'Lexend',sans-serif;
-  background-image: url('../Assets//bgtexte.png');
+  background-image: url('../Assets//bgtexte.webp');
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;

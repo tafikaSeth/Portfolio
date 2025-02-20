@@ -2,9 +2,9 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
-import pathPhp from '../../Assets/php.png'
-import pathPy from '../../Assets/py.png'
-import pathTs from '../../Assets/ts.png'
+import pathPhp from '../../Assets/php.webp'
+import pathPy from '../../Assets/py.webp'
+import pathTs from '../../Assets/ts.webp'
 import "../Card/card.css"
 import { motion } from 'framer-motion'
 

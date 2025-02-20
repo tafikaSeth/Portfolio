@@ -2,8 +2,8 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill'
-import pathReact from '../../Assets/react.png'
-import pathLaravel from '../../Assets/laravel.png'
+import pathReact from '../../Assets/react.webp'
+import pathLaravel from '../../Assets/laravel.webp'
 import "../Card/card.css"
 import { motion } from 'framer-motion'
 

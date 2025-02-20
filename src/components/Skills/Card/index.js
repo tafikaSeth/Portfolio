@@ -2,11 +2,11 @@
 import React from 'react'
 import { useState } from 'react'
 import CardSkill from '../cardSkill/index'
-import pathHtml from '../../Assets/html.png'
-import pathCss from '../../Assets/css.png'
-import pathJs from '../../Assets/js.png'
+import pathHtml from '../../Assets/html.webp'
+import pathCss from '../../Assets/css.webp'
+import pathJs from '../../Assets/js.webp'
 import "./card.css"
-import {delay, motion} from 'framer-motion'
+import { motion} from 'framer-motion'
 
 const Card = ({title,image}) => {
     const contexte = "Web technology encompasses the various tools and techniques used to communicate and interact over the internet."
