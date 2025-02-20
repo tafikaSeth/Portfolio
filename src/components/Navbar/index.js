@@ -19,7 +19,7 @@ const Navbar = () => {
     return(
         <nav className="navbar">
                 <div id="myNav" className="overlay">
-                    <a className="closebtn" onClick={closeMenuMobile}>&times;</a>
+                    <button className="closebtn" onClick={closeMenuMobile}>&times;</button>
                     <div className="overlay-content">
                         <a href="#home">Home</a>
                         <a href="#about">About</a>
@@ -38,9 +38,9 @@ const Navbar = () => {
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div className="navbar-mode">
-                <a href="https://web.facebook.com/profile.php?id=100092466422462"><img src={pathFb} alt="facebook"/></a>
-                <a href="https://web.facebook.com/profile.php?id=100092466422462"><img src={pathIn} alt="linkedin"/></a>
-                <a href="https://web.facebook.com/profile.php?id=100092466422462"><img src={pathApp} alt="whatsapp"/></a>
+                <a href="https://web.facebook.com/profile.php?id=100092466422462" target="_blank" rel="noopener noreferrer"><img src={pathFb} alt="facebook"/></a>
+                <a href="https://web.facebook.com/profile.php?id=100092466422462" target="_blank" rel="noopener noreferrer"><img src={pathIn} alt="linkedin"/></a>
+                <a href="https://web.facebook.com/profile.php?id=100092466422462" target="_blank" rel="noopener noreferrer"><img src={pathApp} alt="whatsapp"/></a>
             </div>
         </nav>
     )

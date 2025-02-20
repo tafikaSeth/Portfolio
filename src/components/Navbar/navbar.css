@@ -111,6 +111,9 @@ html{
   top: 20px;
   right: 45px;
   font-size: 60px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
 }
 
 @media screen and (max-width: 1280px) {
