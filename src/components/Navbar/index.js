@@ -39,8 +39,8 @@ const Navbar = () => {
             </ul>
             <div className="navbar-mode">
                 <a href="https://web.facebook.com/profile.php?id=100092466422462" target="_blank" rel="noopener noreferrer"><img src={pathFb} alt="facebook"/></a>
-                <a href="https://web.facebook.com/profile.php?id=100092466422462" target="_blank" rel="noopener noreferrer"><img src={pathIn} alt="linkedin"/></a>
-                <a href="https://web.facebook.com/profile.php?id=100092466422462" target="_blank" rel="noopener noreferrer"><img src={pathApp} alt="whatsapp"/></a>
+                <a href="https://www.linkedin.com/in/aintsoa-sarobidy-seth-76701033b/" target="_blank" rel="noopener noreferrer"><img src={pathIn} alt="linkedin"/></a>
+                <a href="https://wa.me/+261384816313" target="_blank" rel="noopener noreferrer"><img src={pathApp} alt="whatsapp"/></a>
             </div>
         </nav>
     )
