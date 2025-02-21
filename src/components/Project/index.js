@@ -57,7 +57,6 @@ const Project = () => {
     //getWidth to change the slider per view
     const getWidth = () => {
         setWindowWidth(window.innerWidth)
-        console.log( "ty "+windowWidth);
     }
 
     const handleClickRound = (e) => {
@@ -67,7 +66,7 @@ const Project = () => {
         if(isDisp){
             showCard()
         }else{
-            console.log("erreur eh");
+            console.log("Disable");
         }
     }
 

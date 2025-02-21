@@ -102,32 +102,15 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.content-contact-cardTwo-message label{
+.content-contact-cardTwo-message .common-label{
     color: #fff;
     text-align: left;
     font-size: 12px;
     display: flex;
 }
-.content-contact-cardTwo-message #lab{
-    color: #797373;
-    font-weight: 400;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: 'Lexend',sans-serif;
-    transition: all 0.3s ease-in-out;
-    pointer-events: none;
-}
 #input-message {
     width: 500px;
     height: 80px;
-}
-#input-message:focus + #lab,
-#input-message:not(:placeholder-shown) + #lab {
-    top: 5px;
-    font-size: 12px;
-    transform: translateY(0);
 }
 
 /* mobile */

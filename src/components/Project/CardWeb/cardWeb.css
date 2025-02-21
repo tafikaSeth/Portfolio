@@ -20,7 +20,7 @@
 .content-cardweb-texte{
   width: 100%;
   height: 50%;
-
+  
 }
 .content-cardweb-texte h2{
   font-family: 'Lexend',sans-serif;
@@ -37,17 +37,6 @@
   width: 300px;
   text-align: center;
   margin-left: 20px;
-}
-.content-cardweb-texte button{
-  width: 150px;
-  height: 30px;
-  background: #14FF00;
-  color: #fff;
-  font-family: 'Lexend',sans-serif;
-  border: 1px solid #121212;
-  border-radius: 5px;
-  cursor: pointer;
-  float: right;
 }
 
   @media screen and (max-width: 1280px) {

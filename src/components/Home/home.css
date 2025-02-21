@@ -52,7 +52,7 @@
   letter-spacing: 2px;
 }
 .btn-contact a {
-  z-index: 10;
+  z-index: 20;
   position: relative;
   display: inline-block;
   padding: 8px 16px;
@@ -181,6 +181,9 @@
   .content-home-image{
     width: 40%;
     height: 90vh;
+  }
+  .btn-contact a{
+    z-index: 20;
   }
 }
 

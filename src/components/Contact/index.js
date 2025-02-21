@@ -83,13 +83,13 @@ const Contact = () => {
                         >
                             <div className="content-contact-cardTwo-message">
                                 <h3>Send me your message</h3>
-                                    <label for="userName">Username</label>
-                                        <input type="text" id="userName" name="userName" value={formData.userName} onChange={handleChange} placeholder="Name*" aria-label="username"  required/>
-                                    <label for="userEmail">Email</label>
-                                        <input type="email" id="userEmail" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder="Your Email*" aria-label="email" required/>
+                                    <label for="userName" className="common-label">Username</label>
+                                        <input type="text" id="userName" name="userName" value={formData.userName} onChange={handleChange} placeholder=" Name*" aria-label="username"  required/>
+                                    <label for="userEmail" className="common-label">Email</label>
+                                        <input type="email" id="userEmail" name="userEmail" value={formData.userEmail} onChange={handleChange} placeholder=" Your Email*" aria-label="email" required/>
                                 <div style={{position: 'relative'}} className="for-input">
-                                    <label for="input-message" id="lab">Tape your message</label>
-                                    <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message" placeholder=" "/>
+                                    {/* <label for="input-message" id="lab">Tape your message</label> */}
+                                    <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message" placeholder=" Tape your message"/>
                                 </div>
                                 <button className="btnActive" type="submit">Send message</button>
                             </div>
