@@ -23,7 +23,7 @@ const App = () => {
       <div style={{background: 'red',position: 'relative', overflow: 'hidden', height: '100vh', width: '100%', backgroundColor: '#212121'}}>
         <Ballpit
           count={100}
-          colors= {['white','green','#14FF00']}
+          colors= {['white','red','#14FF00']}
           gravity={0.5}
           friction={0.889}
           wallBounce={0.95}
