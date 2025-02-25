@@ -3,7 +3,6 @@
   height: 100%;
   position: relative;
   z-index: 5;
-  pointer-events: none;
 }
 @media (min-width: 768px){
   .ribbons-container{
@@ -12,7 +11,7 @@
     position: relative;
     z-index: 5;
   }
-}
+} 
 @media (max-width: 767px) {
   .ribbons-container{
     display: none;
