@@ -15,20 +15,22 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 5000)
+    }, 10000)
   }, [])
 
   if(isLoading){
     return(
-      <div style={{position: 'relative', overflow: 'hidden', height: '100vh', width: '100%', backgroundColor: '#212121'}}>
+      <div style={{background: 'red',position: 'relative', overflow: 'hidden', height: '100vh', width: '100%', backgroundColor: '#212121'}}>
         <Ballpit
           count={100}
           colors= {['white','green','#14FF00']}
           gravity={0.5}
-          friction={0.8}
+          friction={0.889}
           wallBounce={0.95}
           followCursor={true}
+          maxZ= {1}
         />
+        <h1 style={{fontFamily: 'Lexend,sans-serif', color: '#fff', fontSize: '50px',textAlign: 'center',marginTop: '-25rem'}}>--LOADING--</h1>
       </div>
     )
   }
