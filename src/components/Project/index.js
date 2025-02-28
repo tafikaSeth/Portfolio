@@ -22,7 +22,7 @@ import { motion } from "framer-motion";
 
 const Project = () => {
     const paragraphPortfolio = "Creation of my portfolio to show you what i'm capable in web development"
-    const outilsPortfolio = "Techno: ReactJs, Swiper."
+    const outilsPortfolio = "ReactJs, Swiper."
     const urlPortfolio = "https://github.com/tafikaSeth/Portfolio.git"
     const paragraphMikrea = "Integration the website MikRea project to broaden my web development skills"
     const outilsMikrea = "Techno: NextJs."
@@ -40,7 +40,7 @@ const Project = () => {
     const paragraphChat = "Creation of a sports betting messenger chatbot and chatGPT-turbo integration"
     const paragraphGenerator = "Mobile application for generate and scan a qr code simply"
     const outilsGenerator = "Techno: React native, Expo, Eas build"
-    const urlGenarator = 'https://expo.dev/accounts/sethtafika/projects/genarate/builds/64550660-bf47-4c20-beb3-4eb91c2cd6e8'
+    const urlGenarator = 'https://expo.dev/accounts/sethtafika/projects/genarate/builds/1b0084be-692d-4baa-9451-81076971415d'
     
     const [isDisp,setIsDisp] = useState(true)
     const [roundSelected,setRoundSelected] = useState('round-first')
@@ -156,16 +156,16 @@ const Project = () => {
                                 slidesPerView={windowWidth<=768 ? 1 : 3}
                             >
                                 <SwiperSlide>
-                                    <CardWeb backround={bgPortfolio} projectName='MY PORTFOLIO' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
+                                    <CardWeb backround={bgPortfolio} projectName='MY PORTFOLIO' titleBtn='VIEW CODE' urlButton={urlPortfolio} paragraph={paragraphPortfolio} outils={outilsPortfolio}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround={bgMikrea} projectName='MIKREA' urlButton='#mikrea' paragraph={paragraphMikrea} outils={outilsMikrea}/>
+                                    <CardWeb backround={bgMikrea} projectName='MIKREA' titleBtn='VISIT' urlButton='#mikrea' paragraph={paragraphMikrea} outils={outilsMikrea}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround={bgVideoCalling} projectName='VIDEO CALLING' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
+                                    <CardWeb backround={bgVideoCalling} projectName='VIDEO CALLING' titleBtn='VISIT' urlButton='#videoCalling' paragraph={paragraphVideo} outils={outilsVideo}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround={bgEnjoyB} projectName='EnjoyB' urlButton='#videoCalling' paragraph={paragraphEnjoyB} outils={outilsEnjoyB}/>
+                                    <CardWeb backround={bgEnjoyB} projectName='EnjoyB' titleBtn='VISIT' urlButton='#videoCalling' paragraph={paragraphEnjoyB} outils={outilsEnjoyB}/>
                                 </SwiperSlide>
                             </Swiper>
                         </motion.div>
@@ -179,10 +179,10 @@ const Project = () => {
                                 slidesPerView={windowWidth<=768 ? 1 : 2}
                             >
                                 <SwiperSlide>
-                                    <CardWeb backround={bgMobile} projectName='Geolocalisation' urlButton='#videoCalling' paragraph={paragraphMobile} outils={outilsMobile}/>
+                                    <CardWeb backround={bgMobile} projectName='Geolocalisation' titleBtn='VIEW DEMO' urlButton='#videoCalling' paragraph={paragraphMobile} outils={outilsMobile}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <CardWeb backround={bgGearator} projectName='Generator' urlButton={urlGenarator} paragraph={paragraphGenerator} outils={outilsGenerator}/>
+                                    <CardWeb backround={bgGearator} projectName='Generator' titleBtn='DOWNLOAD THE APP' urlButton={urlGenarator} paragraph={paragraphGenerator} outils={outilsGenerator}/>
                                 </SwiperSlide>
                             </Swiper>
                         </motion.div>
@@ -190,13 +190,13 @@ const Project = () => {
                             initial = {{ opacity: 1, y: 50 }}
                             whileInView = {{ opacity: 1, y: 0, transtion:{ duration: 0.2 } }}
                         >
-                            <CardWeb backround={bgWebDesign} projectName='C-KALI' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>
+                            <CardWeb backround={bgWebDesign} projectName='C-KALI' titleBtn='VISIT ON FIGMA' urlButton={urlKali} paragraph={paragraphKali} outils={outilsKali}/>
                         </motion.div>
                         <motion.div className="content-projects-for-card-ai" style={{display:displayCardChatbot}}
                             initial = {{ opacity: 1, y: 50 }}
                             whileInView = {{ opacity: 1, y: 0, transtion:{ duration: 0.2 } }}
                         >
-                            <CardWeb backround={bgChat} projectName='CHATBOT MESSENGER' urlButton={urlChat} paragraph={paragraphChat} outils={outilsChat}/>
+                            <CardWeb backround={bgChat} projectName='CHATBOT MESSENGER' titleBtn='VIEW DEMO' urlButton={urlChat} paragraph={paragraphChat} outils={outilsChat}/>
                         </motion.div>
                     </div>
                 </div>

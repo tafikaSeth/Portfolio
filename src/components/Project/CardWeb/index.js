@@ -1,7 +1,7 @@
 import React from 'react'
 import "./cardWeb.css"
 
-const CardWeb = ({backround,projectName,paragraph,outils,urlButton}) => {
+const CardWeb = ({backround,projectName,paragraph,outils,titleBtn,urlButton}) => {
     return(
         <div className='container-cardweb'>
             <div className='content-cardweb'>
@@ -9,13 +9,13 @@ const CardWeb = ({backround,projectName,paragraph,outils,urlButton}) => {
                 <div className='content-cardweb-texte'>
                     <h2>{projectName}</h2>
                     <p>{paragraph}</p>
-                    <p>{outils}</p>
-                    {/* <div className='btnCardWeb'>
-                        <a href={`${urlButton}`}>
-                            <button>GET LINK</button>
-                        </a>
-                    </div> */}
+                        <p>{outils}</p>
                 </div>
+            </div>
+            <div className='btnCardWeb'>
+                <a href={`${urlButton}`}>
+                    {titleBtn}
+                </a>
             </div>
         </div>
     )
