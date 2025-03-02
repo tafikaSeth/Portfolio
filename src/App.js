@@ -12,17 +12,19 @@ import { useState } from 'react';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true)
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 10000)
+    }, 100000)
   }, [])
 
   if(isLoading){
     return(
       <div style={{background: 'red',position: 'relative', overflow: 'hidden', height: '100vh', width: '100%', backgroundColor: '#212121'}}>
         <Ballpit
-          count={100}
+          // count={100}
+          count={50}
           colors= {['white','red','#14FF00']}
           gravity={0.5}
           friction={0.889}
