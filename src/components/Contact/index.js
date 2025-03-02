@@ -1,7 +1,9 @@
-import React, { useState,useRef } from "react";
-import "./contact.css"
 import emailjs from "emailjs-com" 
 import { motion } from "framer-motion";
+import { ToastContainer, toast, Zoom } from "react-toastify";
+import 'react-toastify/ReactToastify.css'
+import React, { useState,useRef } from "react";
+import "./contact.css"
 
 
 const Contact = () => {
@@ -19,6 +21,7 @@ const Contact = () => {
             ...formData,[name]:value
         })
     }
+
     const handleSubmit = (e) => {
         e.preventDefault()
         emailjs.send(
@@ -32,10 +35,10 @@ const Contact = () => {
             'yxVYn5pWjbDw-PolF' 
           ).then((result) => {
             console.log(result.text);
-            alert('Email sent successfully!');
-          }, (error) => {
+            toast.success("Email sent successfully!");
+        }, (error) => {
             console.log(error.text);
-            alert('Failed to send email.');
+            toast.info("Email not sent, please try again after a few minutes!")
           });
       
           setFormData({
@@ -45,6 +48,7 @@ const Contact = () => {
           });
 
     }
+
     return(
         <form onSubmit={handleSubmit}>
             <div id="contact" className="container-contact">
@@ -92,6 +96,7 @@ const Contact = () => {
                                     <input ref={inputValue} type="text" name="message" value={formData.message} onChange={handleChange} id="input-message" placeholder=" Tape your message"/>
                                 </div>
                                 <button className="btnActive" type="submit">Send message</button>
+                                <ToastContainer transition={Zoom}/>
                             </div>
                         </motion.div>
                     </div>
