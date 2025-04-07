@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Home from './components/Home';
 import About from './components/About';
 import Project from './components/Project';
@@ -11,6 +11,7 @@ import { Canvas } from '@react-three/fiber';
 import { Loading } from './components/Loading/Loading';
 import { Avatar } from './components/Loading/Avatar';
 import { PC } from './components/Loading/PC';
+import { Loader } from './components/Loading/Loader';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -18,13 +19,14 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 5000)
+    }, 10000)
   }, [])
 
   if(isLoading) {
     return(
       <div style={{height: '100vh', width: '100vw'}}>
         <Canvas shadows camera={{position: [8, 2, 5], fov: 30}}>
+          <Suspense fallback={<Loader/>}>
           <color attach="background" args={["#191919"]}/>
           <Loading/>
           <group position-y={-1}>
@@ -48,6 +50,7 @@ const App = () => {
             </mesh>
           </group>
           <ambientLight intensity={1}/>
+          </Suspense>
         </Canvas>
       </div>
     )
