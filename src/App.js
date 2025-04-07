@@ -1,5 +1,4 @@
-// import React, { useEffect } from 'react';
-import "./App.css"
+import { useState, useEffect } from 'react';
 import Home from './components/Home';
 import About from './components/About';
 import Project from './components/Project';
@@ -7,35 +6,29 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Ribbons from "./components/Animation"
-// import Ballpit from './components/Loading';
-import { useState } from 'react';
+import "./App.css"
+import { Canvas } from '@react-three/fiber';
+import { Loading } from './components/Loading/Loading';
 
 const App = () => {
-  // const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoading(false)
-  //   }, 10000)
-  // }, [])
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 20000)
+  }, [])
 
-  // if(isLoading){
-  //   return(
-  //     <div style={{background: 'red',position: 'relative', overflow: 'hidden', height: '100vh', width: '100%', backgroundColor: '#212121'}}>
-  //       <Ballpit
-  //         // count={100}
-  //         count={50}
-  //         colors= {['white','red','#14FF00']}
-  //         gravity={0.5}
-  //         friction={0.889}
-  //         wallBounce={0.95}
-  //         followCursor={true}
-  //         maxZ= {1}
-  //       />
-  //       <h1 style={{fontFamily: 'Lexend,sans-serif', color: '#fff', fontSize: '50px',textAlign: 'center',marginTop: '-25rem'}}>--LOADING--</h1>
-  //     </div>
-  //   )
-  // }
+  if(isLoading) {
+    return(
+      <div style={{height: '100vh', width: '100vw'}}>
+        <Canvas shadows camera={{position: [0, 2, 5], fov:  30}}>
+          <color attach="background" args={["#191919"]}/>
+          <Loading/>
+        </Canvas>
+      </div>
+    )
+  }
   return (
     <div className='App'>
       <Navbar/>
