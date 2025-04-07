@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 10000)
+    }, 5000)
   }, [])
 
   if(isLoading) {
@@ -41,9 +41,7 @@ const App = () => {
             </mesh>
           </group>
           <group rotation-y={Math.PI / 2} position={[0, 0, 1.1]}>
-            <group position={[0.3, 0, 0]}>
               <PC/>
-            </group>
             <mesh scale={[0.8, 0.6, 3]} position-y={-0.60}>
               <boxGeometry />
               <meshNormalMaterial wireframe/>
