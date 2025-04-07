@@ -6,18 +6,22 @@ Command: npx gltfjsx@6.5.3 public/models/67eea934b857ed317615e9a5.glb
 import React, { useEffect, useRef } from 'react'
 import { useAnimations, useFBX, useGLTF } from '@react-three/drei'
 
+useGLTF.preload('models/avatar.glb')
+
 export function Avatar(props) {
 
     const groupRef = useRef()
 
-    const { nodes, materials } = useGLTF('models/67eea934b857ed317615e9a5.glb')
+    const { nodes, materials } = useGLTF('models/avatar.glb')
     const { animations: typingAnimation } = useFBX('animation3D/Typing.fbx')
     typingAnimation[0].name = 'Typing'
 
     const { actions } = useAnimations(typingAnimation, groupRef)
 
     useEffect(() => {
+      if(actions['Typing']) {
         actions['Typing'].reset().play()
+      }
     }, [actions])
 
   return (
@@ -35,5 +39,3 @@ export function Avatar(props) {
     </group>
   )
 }
-
-useGLTF.preload('models/67eea934b857ed317615e9a5.glb')
