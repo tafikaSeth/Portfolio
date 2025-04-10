@@ -1,21 +1,40 @@
-import React from "react";
+import React, { useRef } from "react"
 import { Html, useProgress } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber"
 
 export const Loader = () => {
 
     const { progress } = useProgress()
 
+    const sphereRef = useRef(null)
+    
+    useFrame(() => {
+        if(sphereRef.current) {
+            sphereRef.current.rotation.y  += 0.02
+        }
+    })
+
     return (
         <Html fullscreen>
             <div style={styles.overlay}>
             <div style={styles.container}>
+                <div style={styles.loader3d}>
+                    <Canvas>
+                    <mesh
+                        ref={sphereRef}
+                        scale={[3, 3, 3]}
+                    >
+                        <octahedronGeometry />
+                        <meshNormalMaterial wireframe/>
+                     </mesh>
+                     </Canvas>
+                </div>
                 <div style={styles.barWrapper}>
                     <div style={{...styles.bar, width:  `${progress}%`}}/>
                 </div>
                 <p style={styles.text}>Chargement... {Math.floor(progress)}%</p>
             </div>
             </div>
-
         </Html>
     )
 }
@@ -36,6 +55,10 @@ const styles = {
         color: '#14FF00',
         fontFamily: 'monospace',
         fontSize: '1rem',
+    },
+    loader3d : {
+        width: '400px',
+        height: '200px',
     },
     barWrapper: {
         width: '200px',
